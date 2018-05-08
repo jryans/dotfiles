@@ -45,7 +45,7 @@ hash grunt 2>/dev/null && eval "$(grunt --completion=bash)"
 # [[ -s ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 eval "$(direnv hook bash)"
-# [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
+[[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
 
 # General
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
