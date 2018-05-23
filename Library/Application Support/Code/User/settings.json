@@ -1,0 +1,130 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 14,
+  "workbench.colorTheme": "Base16 Dark Tomorrow",
+  "workbench.iconTheme": null,
+
+  "editor.tabSize": 2,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": false,
+  // "editor.wordWrap": "wordWrapColumn",
+  "editor.scrollBeyondLastLine": false,
+  "editor.autoIndent": true,
+
+  "editor.rulers": [ 80, 90 ],
+  "[python]": {
+    "editor.rulers": [ 99 ]
+  },
+  "[rust]": {
+    "editor.rulers": [ 99 ]
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": false
+  },
+  "[beancount]": {
+    "editor.rulers": [ 70 ]
+  },
+  "editor.renderIndentGuides": false,
+  "editor.minimap.enabled": false,
+
+  "workbench.editor.enablePreview": false,
+  "explorer.openEditors.visible": 0,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/._*": true,
+    "**/Thumbs.db": true,
+    "**/*.o": true,
+    "**/obj-*": true
+  },
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/obj-*/**": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": false
+  },
+
+  "files.associations": {
+    "*.jsm": "javascript",
+    "*.configure": "python"
+  },
+
+  "extensions.autoUpdate": false,
+
+  "git.enabled": true,
+  "git.countBadge": "off",
+  "git.decorations.enabled": false,
+  "git.autofetch": false,
+  "git.autorefresh": false,
+  "git.enableSmartCommit": true,
+
+  "gitlens.codeLens.enabled": false,
+  "gitlens.gitExplorer.enabled": false,
+  "gitlens.gitExplorer.autoRefresh": false,
+  "gitlens.codeLens.scopes": [
+    "document"
+  ],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.keymap": "chorded",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.statusBar.reduceFlicker": true,
+
+  "javascript.validate.enable": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+
+  // "python.linting.pylintEnabled": false,
+  // "python.linting.flake8Enabled": true,
+
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "ignore": false
+  },
+
+  "go.buildOnSave": "off",
+
+  "beancount.separatorColumn": 64,
+
+  "ActiveFileInStatusBar.fullpath": false,
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "typescript.autoImportSuggestions.enabled": false,
+  "search.smartCase": true,
+  "problems.decorations.enabled": false,
+
+  "cSpell.userWords": [
+    "Stylo",
+    "chroot",
+    "coeffects",
+    "filesystems",
+    "fuzzer",
+    "indirected",
+    "llvm",
+    "multiarch"
+  ],
+  "cSpell.enabledLanguageIds": [
+    "markdown"
+  ],
+}
