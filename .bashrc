@@ -203,3 +203,7 @@ alias approxmc-configure='CC="/usr/local/opt/gcc/bin/gcc-7" CXX="/usr/local/opt/
 alias approxmc-run="./build/approxmc --epsilon=0.8 --delta=0.2 --gaussuntil=400 "\
 "--verbosity=1 ../../jfs-experiments/experiments/4/benchmark_extremes_cnf/qf_fp/div.c.3.cnf | "\
 "tee ../../jfs-experiments/experiments/4/benchmark_extremes_cnf/qf_fp/div.c.3.count.log"
+
+# RISC-V
+export RISCV="/Users/jryans/Projects/boom-template/rocket-chip/riscv-tools/target"
+export PATH="${RISCV}/bin:${PATH}"
