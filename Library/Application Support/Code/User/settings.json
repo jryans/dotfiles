@@ -139,14 +139,31 @@
   "problems.decorations.enabled": false,
 
   "cSpell.userWords": [
-    "Stylo",
+    "stylo",
+    "alastair",
+    "angr",
+    "baraniuk",
+    "bazaarvoice",
+    "cadar",
     "chroot",
     "coeffects",
+    "cristian",
+    "duarte",
+    "epfl",
     "filesystems",
     "fuzzer",
+    "fédérale",
+    "iframes",
     "indirected",
+    "lausanne",
+    "liew",
+    "lifecycle",
     "llvm",
-    "multiarch"
+    "multiarch",
+    "multihop",
+    "polytechnique",
+    "stinnett",
+    "école"
   ],
   "cSpell.enabledLanguageIds": [
     "markdown"
