@@ -36,6 +36,8 @@ export MAVEN_OPTS="-Xmx1024M"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
+export MAKEFLAGS="-j $(echo "$(sysctl -n hw.ncpu) - 2" | bc)"
+
 # Shell integrations
 [[ -s `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
 eval "$(rbenv init -)"
