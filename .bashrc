@@ -41,7 +41,6 @@ export MAKEFLAGS="-j $(echo "$(sysctl -n hw.ncpu) - 2" | bc)"
 # Shell integrations
 [[ -s `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
 eval "$(rbenv init -)"
-hash grunt 2>/dev/null && eval "$(grunt --completion=bash)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
 [[ -s "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh" ]] && source "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh"
 # [[ -s ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
