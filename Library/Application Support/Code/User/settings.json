@@ -91,6 +91,28 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.statusBar.reduceFlicker": true,
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "details": true,
+      "history": false,
+      "remote": true
+    },
+    "editorGroup": false,
+    "editorTab": {
+      "compare": false,
+      "history": false,
+      "remote": true
+    },
+    "explorer": {
+      "compare": true,
+      "history": true,
+      "remote": true
+    }
+  },
 
   "javascript.validate.enable": false,
   "typescript.disableAutomaticTypeAcquisition": true,
