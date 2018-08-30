@@ -116,6 +116,7 @@
 
   "javascript.validate.enable": false,
   "typescript.disableAutomaticTypeAcquisition": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
   // "python.linting.pylintEnabled": false,
   // "python.linting.flake8Enabled": true,
