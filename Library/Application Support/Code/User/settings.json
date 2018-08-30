@@ -130,8 +130,6 @@
 
   "beancount.separatorColumn": 64,
 
-  "ActiveFileInStatusBar.fullpath": false,
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
