@@ -1,0 +1,75 @@
+[ui]
+username = J. Ryan Stinnett <jryans@gmail.com>
+merge = internal:merge
+
+[extensions]
+bookmarks =
+children =
+color =
+extdiff =
+graphlog =
+histedit =
+mq =
+pager =
+progress =
+purge =
+rebase =
+record =
+transplant =
+#evolve = /Users/jryans/projects/hgexts/mutable-history/hgext/evolve.py
+#bzexport = /Users/jryans/projects/hgexts/version-control-tools/hgext/bzexport
+#crecord = /Users/jryans/projects/hgexts/crecord/crecord
+#hgshelve = /Users/jryans/projects/hgexts/hgshelve/hgshelve.py
+#mozext = /Users/jryans/projects/hgexts/version-control-tools/hgext/mozext
+firefoxtree = /Users/jryans/projects/hgexts/version-control-tools/hgext/firefoxtree
+qimportbz = /Users/jryans/projects/hgexts/version-control-tools/hgext/qimportbz
+#qqver = /Users/jryans/projects/hgexts/qqver
+#trychooser = /Users/jryans/projects/hgexts/trychooser/trychooser
+mqext = /Users/jryans/projects/hgexts/version-control-tools/hgext/mqext
+push-to-try = /Users/jryans/projects/hgexts/version-control-tools/hgext/push-to-try
+#patience = /Users/jryans/projects/hgexts/hg-patience/patience.py
+reviewboard = /Users/jryans/projects/hgexts/version-control-tools/hgext/reviewboard/client.py
+#hgwatchman = /Users/jryans/projects/hgexts/hgwatchman/hgwatchman
+#bundleclone = /Users/jryans/projects/hgexts/version-control-tools/hgext/bundleclone
+
+[alias]
+show = log --patch --verbose --rev
+blame = blame -udn
+at = qnew try -m 'try: -b do -p all -u all -t none'
+dt = qnew try -m 'try: -b do -p all -u all[Fedora,Ubuntu] -t none'
+
+[defaults]
+commit = -v
+qnew = -U -D
+qrefresh = -U -D
+qseries = -s -v
+revert = -C
+
+[color]
+mode = terminfo
+
+[diff]
+git = true
+showfunc = true
+unified = 8
+patience = true
+
+[pager]
+pager = LESS="FRX" less
+attend = annotate, cat, diff, export, glog, log, qdiff, incoming, show, blame
+
+[bugzilla]
+username = jryans@gmail.com
+apikey = rp8JgOtGDePbZbuJdYReTxjFIEVCeuOsLjzA5PoJ
+
+[mozilla]
+ircnick = jryans
+
+[mozext]
+noautocritic = true
+ircnick = jryans
+
+[hostsecurity]
+bugzilla.mozilla.org:fingerprints = sha1:47:13:a2:14:0c:46:45:53:12:0d:e5:36:16:a5:60:26:3e:da:3a:60
+hg.mozilla.org:fingerprints = sha256:8e:ad:f7:6a:eb:44:06:15:ed:f3:e4:69:a6:64:60:37:2d:ff:98:88:37:bf:d7:b8:40:84:01:48:9c:26:ce:d9
+bitbucket.org:fingerprints = sha1:3f:d3:c5:17:23:3c:cd:f5:2d:17:76:06:93:7e:ee:97:42:21:14:aa
