@@ -56,7 +56,8 @@
 
   "files.associations": {
     "*.jsm": "javascript",
-    "*.configure": "python"
+    "*.configure": "python",
+    "Makefrag*": "makefile"
   },
 
   "extensions.autoUpdate": false,
