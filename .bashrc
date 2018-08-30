@@ -23,7 +23,8 @@ PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[0
 PROJPATH="~/Projects"
 CDPATH=".:~:${PROJPATH}:${PROJPATH}/mozilla"
 export EDITOR="vim"
-export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:$(brew --prefix go)/bin:$(brew --prefix vim)/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:/usr/local/sbin:/usr/local/bin:$PATH"
+hash brew 2>/dev/null && export PATH="$PATH:$(brew --prefix go)/bin:$(brew --prefix vim)/bin"
 
 export HISTSIZE=10000
 export HISTFILESIZE=$HISTSIZE
@@ -31,21 +32,27 @@ export HISTCONTROL="ignoreboth"
 export HISTTIMEFORMAT="%F %r %Z "
 shopt -s histappend
 
-export JAVA_HOME=`/usr/libexec/java_home`
+[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home`
 export MAVEN_OPTS="-Xmx1024M"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
-export MAKEFLAGS="-j $(echo "$(sysctl -n hw.ncpu) - 2" | bc)"
+if [[ "$OS" == 'mac' ]]; then
+  CORES="$(sysctl -n hw.ncpu)"
+else
+  CORES="$(nproc)"
+fi
+export MAKEFLAGS="-j $(echo "${CORES} - 2" | bc)"
 
 # Shell integrations
-[[ -s `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
-eval "$(rbenv init -)"
+hash brew 2>/dev/null && [[ -s `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
+[[ -s /etc/bash_completion ]] && source /etc/bash_completion
+hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
 [[ -s "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh" ]] && source "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh"
 # [[ -s ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-eval "$(direnv hook bash)"
+hash direnv 2>/dev/null && eval "$(direnv hook bash)"
 [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
 
 # General
