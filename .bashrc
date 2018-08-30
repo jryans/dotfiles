@@ -20,10 +20,10 @@ fi
 
 PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
 
-export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/Projects/git-cinnabar:$HOME/Projects/hgexts/version-control-tools/git/commands:$HOME/Projects/mozilla/moz-git-tools:$HOME/Projects/arcanist/bin:$HOME/Projects/android-sdk/tools:$HOME/Projects/android-sdk/platform-tools:$(brew --prefix go)/bin:$(brew --prefix vim)/bin:/usr/local/sbin:/usr/local/bin:$PATH"
-CDPATH=".:~:~/Projects:~/Projects/mozilla"
-export EDITOR="vim"
 PROJPATH="~/Projects"
+CDPATH=".:~:${PROJPATH}:${PROJPATH}/mozilla"
+export EDITOR="vim"
+export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:$(brew --prefix go)/bin:$(brew --prefix vim)/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 export HISTSIZE=10000
 export HISTFILESIZE=$HISTSIZE
@@ -41,7 +41,7 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 eval "$(rbenv init -)"
 hash grunt 2>/dev/null && eval "$(grunt --completion=bash)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
-[[ -s ~/Projects/mozilla/gecko-dev/python/mach/bash-completion.sh ]] && source ~/Projects/mozilla/gecko-dev/python/mach/bash-completion.sh
+[[ -s "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh" ]] && source "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh"
 # [[ -s ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 eval "$(direnv hook bash)"
@@ -110,7 +110,7 @@ alias tf='./mach try fuzzy --preset'
 alias mr-prof='MOZ_PROFILER_STARTUP=1 MOZ_PROFILER_STARTUP_ENTRIES=10000000 ./mach run'
 
 link-mc() {
-  for conf in ~/Projects/mozilla/gecko-dev/.mozconfig-*
+  for conf in "${PROJPATH}/mozilla/gecko-dev/.mozconfig-*"
   do
     ln -snf $conf
   done
@@ -126,7 +126,7 @@ alias mach-stylo='STYLO_FORCE_ENABLED=1 ./mach'
 alias mach-reftest-svg='./mach reftest --setpref=reftest.compareStyloToGecko=true'
 
 # Go
-export GOPATH=$HOME/Projects/go
+export GOPATH=${PROJPATH}/go
 
 # Rust
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
