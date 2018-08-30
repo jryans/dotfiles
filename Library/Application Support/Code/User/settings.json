@@ -67,6 +67,7 @@
   "git.decorations.enabled": false,
   "git.autofetch": false,
   "git.autorefresh": false,
+  "git.detectSubmodules": false,
   "git.enableSmartCommit": true,
 
   "gitlens.codeLens.enabled": false,
