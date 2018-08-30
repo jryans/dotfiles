@@ -192,3 +192,14 @@ alias jfs-build="mkdir -p ${PROJPATH}/jfs/build && "\
 "-D Z3_DIR=${PROJPATH}/z3/build "\
 "-D ENABLE_JFS_ASSERTS=ON "\
 ".."
+
+alias sharpSAT-build="mkdir -p ${PROJPATH}/sharpSAT/build && "\
+"cd ${PROJPATH}/sharpSAT/build && "\
+"cmake -G Ninja "\
+"-D CMAKE_BUILD_TYPE=Release "\
+".."
+
+alias approxmc-configure='CC="/usr/local/opt/gcc/bin/gcc-7" CXX="/usr/local/opt/gcc/bin/g++-7" ../configure'
+alias approxmc-run="./build/approxmc --epsilon=0.8 --delta=0.2 --gaussuntil=400 "\
+"--verbosity=1 ../../jfs-experiments/experiments/4/benchmark_extremes_cnf/qf_fp/div.c.3.cnf | "\
+"tee ../../jfs-experiments/experiments/4/benchmark_extremes_cnf/qf_fp/div.c.3.count.log"
