@@ -31,7 +31,7 @@ export HISTCONTROL="ignoreboth"
 export HISTTIMEFORMAT="%F %r %Z "
 shopt -s histappend
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home`
 export MAVEN_OPTS="-Xmx1024M"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
