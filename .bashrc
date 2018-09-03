@@ -142,3 +142,5 @@ export CARGO_HOME=$HOME/.cargo
 export RUSTUP_HOME=$HOME/.rustup
 
 [[ -s $HOME/Scripts/build.sh ]] && source $HOME/Scripts/build.sh
+[[ -s $HOME/Scripts/dpdk.sh ]] && source $HOME/Scripts/dpdk.sh
+
