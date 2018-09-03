@@ -28,8 +28,6 @@ alias llvm-jfs-build="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
 "../llvm"
 
 # Z3 for JFS
-# "-D OpenMP_CXX_FLAGS=-fopenmp=libomp "\
-# "-D CMAKE_CXX_COMPILER=/Users/jryans/Projects/llvm-project/build/bin/clang++ "\
 alias z3-jfs-build="cd ${PROJPATH}/z3/build && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
