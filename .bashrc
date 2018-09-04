@@ -71,6 +71,7 @@ alias gencert="openssl req -x509 -sha256 -newkey rsa:2048 -keyout localhost.key 
 alias serve="http-server -p 9000 -S -C localhost.crt -K localhost.key"
 alias rsync-push="rsync -avuPzhn /Users/jryans/Downloads jryans@192.168.1.110:/Users/jryans"
 alias rm-pyc="find . -name \*.pyc -exec rm {} \;"
+alias ninja="ninja $MAKEFLAGS"
 
 fe() {
   find . -type d -depth 1 | parallel --timeout 20 "echo -e '\033[32m{}\033[0m'; cd {}; $*"
