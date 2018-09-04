@@ -57,7 +57,11 @@ hash direnv 2>/dev/null && eval "$(direnv hook bash)"
 
 # General
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-alias ls='ls -G'
+if [[ "$OS" == 'mac' ]]; then
+  alias ls='ls -G'
+else
+  alias ls='ls --color=auto'
+fi
 alias dek='sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext /System/Library/Extensions/AppleUSBMultitouch.kext'
 alias eek='sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext /System/Library/Extensions/AppleUSBMultitouch.kext'
 alias lsp='lsof -i -n -P -sTCP:LISTEN'
