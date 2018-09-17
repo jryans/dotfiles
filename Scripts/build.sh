@@ -1,10 +1,44 @@
 ## Build commands from various projects
 
+# KLEE uClibc for Vigor
+alias klee-uclibc-vigor-configure="./configure "\
+"--make-llvm-lib "\
+"--with-llvm-config=${PROJPATH}/llvm-project/build-for-vigor/bin/llvm-config "\
+"--with-cc=${PROJPATH}/llvm-project/build-for-vigor/bin/clang && "\
+"cp ${PROJPATH}/vigor-verified-network/install/klee-uclibc.config .config"
+
 # KLEE
-alias klee-build='cmake -D LLVM_CONFIG_BINARY=/usr/local/opt/llvm34/bin/llvm-config-3.4 -D LLVMCC=/usr/local/opt/llvm34/bin/clang-3.4 -D LLVMCXX=/usr/local/opt/llvm34/bin/clang++-3.4 -D ENABLE_SOLVER_Z3=ON -D ENABLE_SYSTEM_TESTS=OFF -D ENABLE_UNIT_TESTS=OFF'
+alias klee-configure="cmake "\
+"-D LLVM_CONFIG_BINARY=/usr/local/opt/llvm34/bin/llvm-config-3.4 "\
+"-D LLVMCC=/usr/local/opt/llvm34/bin/clang-3.4 "\
+"-D LLVMCXX=/usr/local/opt/llvm34/bin/clang++-3.4 "\
+"-D ENABLE_SOLVER_Z3=ON "\
+"-D ENABLE_SYSTEM_TESTS=OFF "\
+"-D ENABLE_UNIT_TESTS=OFF"
+
+# KLEE for Vigor
+alias klee-vigor-configure="mkdir -p ${PROJPATH}/klee/build-for-vigor && "\
+"cd ${PROJPATH}/klee/build-for-vigor && "\
+"cmake -G Ninja "\
+"-D CMAKE_PREFIX_PATH=${PROJPATH}/z3/build-for-vigor "\
+"-D CMAKE_INCLUDE_PATH=${PROJPATH}/z3/build-for-vigor/include "\
+"-D CMAKE_CXX_FLAGS='-fno-rtti' "\
+"-D LLVM_CONFIG_BINARY=${PROJPATH}/llvm-project/build-for-vigor/bin/llvm-config "\
+"-D LLVMCC=${PROJPATH}/llvm-project/build-for-vigor/bin/clang "\
+"-D LLVMCXX=${PROJPATH}/llvm-project/build-for-vigor/bin/clang++ "\
+"-D KLEE_UCLIBC_PATH=${PROJPATH}/klee-uclibc "\
+"-D BUILD_SHARED_LIBS=OFF "\
+"-D ENABLE_KLEE_ASSERTS=OFF "\
+"-D ENABLE_KLEE_UCLIBC=ON "\
+"-D ENABLE_POSIX_RUNTIME=ON "\
+"-D ENABLE_SOLVER_Z3=ON "\
+"-D ENABLE_SYSTEM_TESTS=OFF "\
+"-D ENABLE_UNIT_TESTS=OFF "\
+".."
+#    CXXFLAGS="-D_GLIBCXX_USE_CXX11_ABI=0" \
 
 # LLVM for Rust / WASM
-alias llvm-wasm-build="mkdir -p ${PROJPATH}/llvm-project/build-for-wasm && "\
+alias llvm-wasm-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-wasm && "\
 "cd ${PROJPATH}/llvm-project/build-for-wasm && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
@@ -12,7 +46,7 @@ alias llvm-wasm-build="mkdir -p ${PROJPATH}/llvm-project/build-for-wasm && "\
 "../llvm"
 
 # LLVM for JFS
-alias llvm-jfs-build="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
+alias llvm-jfs-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
 "cd ${PROJPATH}/llvm-project/build-for-jfs && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
@@ -27,8 +61,20 @@ alias llvm-jfs-build="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
 "-D BUILD_SHARED_LIBS=OFF "\
 "../llvm"
 
+# LLVM for Vigor
+# TODO: Assert correct LLVM version
+# Projects clang;compiler-rt;libcxx enabled via symlinks
+# "-D CMAKE_CXX_FLAGS='-D_GLIBCXX_USE_CXX11_ABI=0' "\
+alias llvm-vigor-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-vigor && "\
+"cd ${PROJPATH}/llvm-project/build-for-vigor && "\
+"cmake -G Ninja "\
+"-D CMAKE_BUILD_TYPE=Release "\
+"-D LLVM_TARGETS_TO_BUILD=X86 "\
+"../llvm"
+
 # Z3 for JFS
-alias z3-jfs-build="cd ${PROJPATH}/z3/build && "\
+alias z3-jfs-configure="mkdir -p ${PROJPATH}/z3/build-for-jfs && "\
+"cd ${PROJPATH}/z3/build-for-jfs && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
 "-D USE_OPENMP=OFF "\
@@ -36,18 +82,25 @@ alias z3-jfs-build="cd ${PROJPATH}/z3/build && "\
 "-D BUILD_LIBZ3_SHARED=OFF "\
 ".."
 
+# Z3 for Vigor
+# TODO: Assert correct Z3 version
+alias z3-vigor-configure="mkdir -p ${PROJPATH}/z3/build-for-vigor && "\
+"cd ${PROJPATH}/z3 && "\
+"python scripts/mk_make.py --ml -b build-for-vigor -p ${PROJPATH}/z3/build-for-vigor && "\
+"cd build-for-vigor"
+
 # JFS
-alias jfs-build="mkdir -p ${PROJPATH}/jfs/build && "\
+alias jfs-configure="mkdir -p ${PROJPATH}/jfs/build && "\
 "cd ${PROJPATH}/jfs/build && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
 "-D LLVM_DIR=${PROJPATH}/llvm-project/build-for-jfs/lib/cmake/llvm "\
-"-D Z3_DIR=${PROJPATH}/z3/build "\
+"-D Z3_DIR=${PROJPATH}/z3/build-for-jfs "\
 "-D ENABLE_JFS_ASSERTS=ON "\
 ".."
 
 # sharpSAT
-alias sharpSAT-build="mkdir -p ${PROJPATH}/sharpSAT/build && "\
+alias sharpSAT-configure="mkdir -p ${PROJPATH}/sharpSAT/build && "\
 "cd ${PROJPATH}/sharpSAT/build && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
