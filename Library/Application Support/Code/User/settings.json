@@ -11,6 +11,7 @@
   // "editor.wordWrap": "wordWrapColumn",
   "editor.scrollBeyondLastLine": false,
   "editor.autoIndent": true,
+  "editor.fontWeight": "500",
 
   "editor.rulers": [ 80, 90 ],
   "[python]": {
@@ -170,5 +171,4 @@
   "cSpell.enabledLanguageIds": [
     "markdown"
   ],
-  "editor.fontWeight": "500",
 }
