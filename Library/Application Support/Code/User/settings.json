@@ -121,6 +121,8 @@
   "typescript.disableAutomaticTypeAcquisition": true,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
+  "C_Cpp.dimInactiveRegions": false,
+
   // "python.linting.pylintEnabled": false,
   // "python.linting.flake8Enabled": true,
 
