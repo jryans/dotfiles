@@ -140,6 +140,7 @@
   "typescript.autoImportSuggestions.enabled": false,
   "search.smartCase": true,
   "problems.decorations.enabled": false,
+  "window.restoreWindows": "all",
 
   "cSpell.userWords": [
     "stylo",
