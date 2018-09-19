@@ -23,7 +23,7 @@ PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[0
 export PROJPATH="${HOME}/Projects"
 CDPATH=".:~:${PROJPATH}:${PROJPATH}/mozilla"
 export EDITOR="vim"
-export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.anaconda3/bin:$HOME/.cargo/bin:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:/usr/local/sbin:/usr/local/bin:$PATH"
 hash brew 2>/dev/null && export PATH="$PATH:$(brew --prefix go)/bin:$(brew --prefix vim)/bin"
 
 export HISTSIZE=10000
