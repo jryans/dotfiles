@@ -18,7 +18,7 @@
   cp = cherry-pick
   lr = "!f(){ git rebase -i $(git merge-base $(git describe --contains --all HEAD) $1); }; f"
   st = status -sb
-  amend = commit -a --amend --no-edit
+  amend = commit --amend --no-edit
   d = diff
   hgp = "show --binary -M -C -U8 --format=\"# HG changeset patch%n# User %an <%ae>%n%B\""
   l = log
