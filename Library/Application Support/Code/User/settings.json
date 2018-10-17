@@ -129,6 +129,7 @@
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 
   "C_Cpp.dimInactiveRegions": false,
+  "C_Cpp.clang_format_fallbackStyle": "Mozilla",
 
   // "python.linting.pylintEnabled": false,
   // "python.linting.flake8Enabled": true,
