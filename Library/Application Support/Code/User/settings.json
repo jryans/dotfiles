@@ -28,6 +28,11 @@
   "[beancount]": {
     "editor.rulers": [ 70 ]
   },
+  "[makefile]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2,
+  },
   "editor.renderIndentGuides": false,
   "editor.minimap.enabled": false,
 
