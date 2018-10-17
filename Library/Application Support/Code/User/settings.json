@@ -10,6 +10,7 @@
   "editor.formatOnPaste": false,
   // "editor.wordWrap": "wordWrapColumn",
   "editor.scrollBeyondLastLine": false,
+  "files.insertFinalNewline": true,
   "editor.autoIndent": true,
   "editor.fontWeight": "500",
 
