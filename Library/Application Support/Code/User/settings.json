@@ -47,8 +47,9 @@
     "**/.DS_Store": true,
     "**/._*": true,
     "**/Thumbs.db": true,
+    "**/obj-*": true,
+    "**/*.cmd": true,
     "**/*.o": true,
-    "**/obj-*": true
   },
 
   "files.watcherExclude": {
