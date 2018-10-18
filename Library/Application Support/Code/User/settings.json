@@ -151,12 +151,12 @@
   "window.restoreWindows": "all",
 
   "cSpell.userWords": [
-    "stylo",
     "alastair",
     "angr",
     "baraniuk",
     "bazaarvoice",
     "cadar",
+    "candea",
     "chroot",
     "coeffects",
     "cristian",
@@ -174,7 +174,9 @@
     "multiarch",
     "multihop",
     "polytechnique",
+    "rumormongering",
     "stinnett",
+    "stylo",
     "école"
   ],
   "cSpell.enabledLanguageIds": [
