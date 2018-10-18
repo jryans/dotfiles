@@ -146,7 +146,6 @@
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
-  "typescript.autoImportSuggestions.enabled": false,
   "search.smartCase": true,
   "problems.decorations.enabled": false,
   "window.restoreWindows": "all",
