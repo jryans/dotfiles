@@ -172,6 +172,7 @@
     "liew",
     "lifecycle",
     "llvm",
+    "mitigations",
     "multiarch",
     "multihop",
     "polytechnique",
@@ -181,7 +182,8 @@
     "école"
   ],
   "cSpell.enabledLanguageIds": [
-    "markdown"
+    "markdown",
+    "plaintext"
   ],
 
   "window.zoomLevel": 0,
