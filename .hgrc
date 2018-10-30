@@ -68,8 +68,3 @@ ircnick = jryans
 [mozext]
 noautocritic = true
 ircnick = jryans
-
-[hostsecurity]
-bugzilla.mozilla.org:fingerprints = sha1:47:13:a2:14:0c:46:45:53:12:0d:e5:36:16:a5:60:26:3e:da:3a:60
-hg.mozilla.org:fingerprints = sha256:8e:ad:f7:6a:eb:44:06:15:ed:f3:e4:69:a6:64:60:37:2d:ff:98:88:37:bf:d7:b8:40:84:01:48:9c:26:ce:d9
-bitbucket.org:fingerprints = sha1:3f:d3:c5:17:23:3c:cd:f5:2d:17:76:06:93:7e:ee:97:42:21:14:aa
