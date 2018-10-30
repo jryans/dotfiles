@@ -65,7 +65,8 @@
   "files.associations": {
     "*.jsm": "javascript",
     "*.configure": "python",
-    "Makefrag*": "makefile"
+    "Makefrag*": "makefile",
+    "*.ipynb": "json"
   },
 
   "extensions.autoUpdate": false,
