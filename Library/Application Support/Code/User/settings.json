@@ -127,6 +127,7 @@
   "javascript.validate.enable": false,
   "typescript.disableAutomaticTypeAcquisition": true,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.clang_format_fallbackStyle": "Mozilla",
