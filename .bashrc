@@ -141,6 +141,7 @@ alias mach-reftest-svg='./mach reftest --setpref=reftest.compareStyloToGecko=tru
 
 # Go
 export GOPATH=${PROJPATH}/go
+export PATH="${PATH}:${GOPATH}/bin"
 
 # Rust
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
