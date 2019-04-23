@@ -80,11 +80,13 @@
   "git.enableSmartCommit": true,
 
   "gitlens.codeLens.enabled": false,
-  "gitlens.gitExplorer.enabled": false,
-  "gitlens.gitExplorer.autoRefresh": false,
   "gitlens.codeLens.scopes": [
     "document"
   ],
+  "gitlens.views.repositories.autoRefresh": false,
+  "gitlens.views.repositories.enabled": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
   "gitlens.keymap": "chorded",
@@ -99,7 +101,7 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.statusBar.reduceFlicker": true,
-  "gitlens.historyExplorer.enabled": true,
+
   "gitlens.menus": {
     "editor": {
       "blame": false,
