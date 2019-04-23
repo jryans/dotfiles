@@ -144,6 +144,8 @@
 
   "beancount.separatorColumn": 64,
 
+  "markdown.extension.orderedList.autoRenumber": false,
+
   "workbench.activityBar.visible": true,
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
