@@ -71,8 +71,6 @@
 
   "extensions.autoUpdate": false,
 
-  "vim.useCtrlKeys": false,
-
   "git.enabled": true,
   "git.countBadge": "off",
   "git.decorations.enabled": false,
