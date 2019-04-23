@@ -20,12 +20,14 @@
   st = status -sb
   amend = commit --amend --no-edit
   d = diff
+  dc = diff --cached
   hgp = "show --binary -M -C -U8 --format=\"# HG changeset patch%n# User %an <%ae>%n%B\""
   l = log
   l1 = log --oneline
   rc = rebase --continue
   au = add -u
   qr = qrebase
+  msg = log -n 1 --pretty=format:%B
 [core]
   trustctime = false
   deltaBaseCacheLimit = 1g
