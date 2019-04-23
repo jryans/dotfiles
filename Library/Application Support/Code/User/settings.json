@@ -153,6 +153,7 @@
   "search.smartCase": true,
   "problems.decorations.enabled": false,
   "window.restoreWindows": "all",
+  "workbench.list.keyboardNavigation": "filter",
 
   "cSpell.userWords": [
     "alastair",
