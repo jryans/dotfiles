@@ -2,8 +2,10 @@
 {
   "editor.fontFamily": "Source Code Pro",
   "editor.fontSize": 14,
-  "workbench.colorTheme": "Base16 Dark Tomorrow",
+  "editor.fontWeight": "500",
+
   "workbench.iconTheme": null,
+  "workbench.colorTheme": "Base16 Dark Tomorrow",
 
   "editor.tabSize": 2,
   "editor.formatOnType": true,
@@ -11,7 +13,6 @@
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
   "editor.autoIndent": true,
-  "editor.fontWeight": "500",
 
   "editor.rulers": [ 80, 90 ],
   "[python]": {
