@@ -28,6 +28,7 @@
   au = add -u
   qr = qrebase
   msg = log -n 1 --pretty=format:%B
+  nb = "!f(){ git checkout -b $1 origin/master; }; f"
 [core]
   trustctime = false
   deltaBaseCacheLimit = 1g
