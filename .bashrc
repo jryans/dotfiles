@@ -149,7 +149,7 @@ export CARGO_HOME=$HOME/.cargo
 export RUSTUP_HOME=$HOME/.rustup
 
 # Matrix
-export CHANGELOG_GITHUB_TOKEN=$(security find-generic-password -a jryans -s 'Riot changelogs from GitHub' -w)
+$(type security &> /dev/null) && export CHANGELOG_GITHUB_TOKEN=$(security find-generic-password -a jryans -s 'Riot changelogs from GitHub' -w)
 
 [[ -s $HOME/Scripts/build.sh ]] && source $HOME/Scripts/build.sh
 [[ -s $HOME/Scripts/dpdk.sh ]] && source $HOME/Scripts/dpdk.sh
