@@ -156,7 +156,9 @@
   "window.restoreWindows": "all",
   "workbench.list.keyboardNavigation": "filter",
 
+  "cSpell.language": "en,en-GB,en-US",
   "cSpell.userWords": [
+    "Candea’s",
     "alastair",
     "angr",
     "baraniuk",
