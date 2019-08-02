@@ -57,5 +57,6 @@
   cleanup = strip
 [cinnabar]
   helper = /Users/jryans/Projects/git-cinnabar/git-cinnabar-helper
+  version-check = 1559218887
 [pull]
   rebase = true
