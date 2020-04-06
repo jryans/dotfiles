@@ -7,7 +7,9 @@ set editing-mode vi
 
 # allow the use of the Home/End keys
 "\e[1~": beginning-of-line
+"\e[1;10D": beginning-of-line
 "\e[4~": end-of-line
+"\e[1;10C": end-of-line
 
 # allow the use of the Delete/Insert keys
 "\e[3~": delete-char
@@ -16,7 +18,9 @@ set editing-mode vi
 # mappings for "page up" and "page down" to step to the beginning/end
 # of the history
 "\e[5~": beginning-of-history
+"\e\e[A": beginning-of-history
 "\e[6~": end-of-history
+"\e\e[B": end-of-history
 
 # history search
 "\e[A": history-search-backward
