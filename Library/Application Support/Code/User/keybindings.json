@@ -108,45 +108,5 @@
     "key": "cmd+m",
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
-    "key": "shift+alt+left",
-    "command": "cursorHome",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+left",
-    "command": "extension.vim_home",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-  },
-  {
-    "key": "shift+alt+right",
-    "command": "cursorEnd",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+right",
-    "command": "extension.vim_end",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-  },
-  {
-    "key": "alt+up",
-    "command": "cursorPageUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+down",
-    "command": "cursorPageDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+left",
-    "command": "cursorHomeSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "shift+right",
-    "command": "cursorEndSelect",
-    "when": "textInputFocus"
-  },
+  }
 ]

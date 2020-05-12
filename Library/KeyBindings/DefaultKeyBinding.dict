@@ -25,10 +25,6 @@
 		<key></key>
 		<string>deleteWordBackward:</string>
 	</dict>
-	<key>$</key>
-	<string>moveToBeginningOfLineAndModifySelection:</string>
-	<key>$</key>
-	<string>moveToEndOfLineAndModifySelection:</string>
 	<key>$</key>
 	<string>moveToBeginningOfLineAndModifySelection:</string>
 	<key>$</key>
@@ -39,18 +35,6 @@
 	<string>pageDownAndModifySelection:</string>
 	<key>^</key>
 	<string>moveWordBackward:</string>
-	<key>~$</key>
-	<string>pageUpAndModifySelection:</string>
-	<key>~$</key>
-	<string>pageDownAndModifySelection:</string>
-	<key>~$</key>
-	<string>moveToBeginningOfLine:</string>
-	<key>~$</key>
-	<string>moveToEndOfLine:</string>
-	<key>~</key>
-	<string>pageUp:</string>
-	<key>~</key>
-	<string>pageDown:</string>
 	<key></key>
 	<string>moveToBeginningOfLine:</string>
 	<key></key>
