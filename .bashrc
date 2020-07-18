@@ -33,6 +33,8 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL="ignoreboth"
 export HISTTIMEFORMAT="%F %r %Z "
 shopt -s histappend
+# Immediately write history after each command
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 [[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home`
 export MAVEN_OPTS="-Xmx1024M"
