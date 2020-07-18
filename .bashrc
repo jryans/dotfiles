@@ -81,16 +81,17 @@ fe() {
   find . -type d -depth 1 | parallel --timeout 20 "echo -e '\033[32m{}\033[0m'; cd {}; $*"
 }
 
-# Chromium
+# Chromium / Electron
 alias gch='./build/gyp_chromium'
 alias rchrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --remote-debugging-port=9222'
 
-alias urc='drc'
-
-drc() {
-  launchctl unload -w /System/Library/LaunchAgents/com.apple.ReportCrash.plist
-  sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist
+rc() {
+  launchctl $1 -w /System/Library/LaunchAgents/com.apple.ReportCrash.plist
+  sudo launchctl $1 -w /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist
 }
+
+export GIT_CACHE_PATH="${PROJPATH}/electron-project/.git-cache"
+export CHROMIUM_BUILDTOOLS_PATH="${PROJPATH}/electron-project/src/buildtools"
 
 # Node.js
 # alias node='env NODE_NO_READLINE=1 rlwrap node'
