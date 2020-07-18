@@ -119,3 +119,11 @@ export STEM_SOURCE_DIR="/Users/jryans/Projects/tor/stem"
 # RISC-V
 export RISCV="/Users/jryans/Projects/boom-template/rocket-chip/riscv-tools/target"
 export PATH="${RISCV}/bin:${PATH}"
+
+# Electron
+# cd electron-project
+# gclient sync
+# gn gen out/Testing --args="import(\"//electron/build/args/testing.gn\")"
+# gn args out/Testing --list | less
+# ninja -C out/Testing electron
+# out/Testing/Electron.app/Contents/MacOS/Electron ../../vscode
