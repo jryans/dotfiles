@@ -28,10 +28,10 @@ export EDITOR="vim"
 export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
 hash brew 2>/dev/null && export PATH="$PATH:$(brew --prefix go)/bin:$(brew --prefix vim)/bin"
 
-export HISTSIZE=-1
-export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL="ignoreboth"
-export HISTTIMEFORMAT="%F %r %Z "
+HISTSIZE=-1
+HISTFILESIZE=$HISTSIZE
+HISTCONTROL="ignoreboth"
+HISTTIMEFORMAT="%F %r %Z "
 shopt -s histappend
 # Immediately write history after each command
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
