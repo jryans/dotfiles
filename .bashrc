@@ -40,7 +40,9 @@ shopt -s histappend
 # Immediately write history after each command
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-[[ -s /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home`
+# Java
+[ ! -z "$BREW" ] && export JAVA_HOME="/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
+[[ -s /usr/libexec/java_home ]] && export EXTRA_JAVA_HOMES=`/usr/libexec/java_home`
 export MAVEN_OPTS="-Xmx1024M"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
@@ -158,6 +160,10 @@ export RUSTUP_HOME=$HOME/.rustup
 
 # Matrix
 $(type security &> /dev/null) && export CHANGELOG_GITHUB_TOKEN=$(security find-generic-password -a jryans -s 'Riot changelogs from GitHub' -w)
+
+# GraalVM
+GRAALVM_HOME="${PROJPATH}/Malleable/Experiments/Polyglot"
+export PATH="${PATH}:${GRAALVM_HOME}/mx"
 
 [[ -s $HOME/Scripts/build.sh ]] && source $HOME/Scripts/build.sh
 [[ -s $HOME/Scripts/dpdk.sh ]] && source $HOME/Scripts/dpdk.sh
