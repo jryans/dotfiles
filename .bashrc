@@ -18,15 +18,19 @@ else
   SED="sed"
 fi
 
+if hash brew 2>/dev/null; then
+  BREW=true
+fi
+
 PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
 PROMPT_DIRTRIM=2
 
 export LANG="en_US.UTF-8"
+export EDITOR="vim"
 
 export PROJPATH="${HOME}/Projects"
-export EDITOR="vim"
 export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
-hash brew 2>/dev/null && export PATH="$PATH:$(brew --prefix go)/bin:$(brew --prefix vim)/bin"
+[ ! -z "$BREW" ] && export PATH="$PATH:/usr/local/opt/go/bin:/usr/local/opt/vim/bin"
 
 HISTSIZE=-1
 HISTFILESIZE=$HISTSIZE
@@ -49,7 +53,7 @@ fi
 export MAKEFLAGS="-j $(echo "${CORES} - 2" | bc)"
 
 # Shell integrations
-hash brew 2>/dev/null && [[ -s `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
+[ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
 [[ -s /etc/bash_completion ]] && source /etc/bash_completion
 hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
