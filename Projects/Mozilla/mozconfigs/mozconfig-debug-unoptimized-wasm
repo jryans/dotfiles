@@ -10,6 +10,7 @@ ac_add_options --target=wasm32-unknown-emscripten
 # Features
 ac_add_options --disable-crashreporter
 ac_add_options --enable-debug-js-modules
+ac_add_options --disable-ctypes
 
 # Compiling and Debugging
 ac_add_options --enable-debug="-gfull"
