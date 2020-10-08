@@ -1,0 +1,13 @@
+MOZ_ARTIFACT=1
+
+. "$topsrcdir/.mozconfig-release-android"
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-android-artifact
+
+# Features
+
+# Compiling and Debugging
+ac_add_options --enable-artifact-builds
+# ac_add_options --enable-artifact-build-symbols
+# ac_add_options --disable-compile-environment

@@ -1,0 +1,10 @@
+. $topsrcdir/browser/config/mozconfig
+
+# export MOZ_PSEUDO_DERECURSE=1
+
+mk_add_options MOZ_OBJDIR=c:/obj-firefox-release-windows
+
+ac_add_options --disable-debug
+
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip

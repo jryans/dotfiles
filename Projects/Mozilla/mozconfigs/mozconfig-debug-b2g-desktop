@@ -1,0 +1,24 @@
+export CC="clang"
+export CXX="clang++"
+export CFLAGS="-fcolor-diagnostics"
+export CXXFLAGS="-fcolor-diagnostics"
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-b2g-desktop
+
+mk_add_options AUTOCONF=autoconf213
+
+ac_add_options --enable-application=b2g
+ac_add_options --disable-libjpeg-turbo
+
+# ac_add_options --enable-debug="-gfull"
+ac_add_options --disable-optimize
+ac_add_options --with-ccache
+
+ac_add_options --enable-logrefcnt
+ac_add_options --disable-crashreporter
+
+# export FXOS_SIMULATOR=1
+# export GAIADIR=/Users/jryans/projects/mozilla/gaia
+
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip

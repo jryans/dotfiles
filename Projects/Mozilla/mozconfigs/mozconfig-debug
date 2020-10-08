@@ -1,0 +1,41 @@
+# Compiler Flags
+# if test "${MOZ_ARTIFACT}" != "1"; then
+  # JRS: These seem to be the defaults now
+  # export CC="clang"
+  # export CXX="clang++"
+  # export CFLAGS="-fcolor-diagnostics"
+  # export CXXFLAGS="-fcolor-diagnostics"
+# fi
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=browser
+
+# Features
+ac_add_options --disable-crashreporter
+ac_add_options --enable-debug-js-modules
+
+# Compiling and Debugging
+ac_add_options --enable-debug="-gfull"
+# ac_add_options --enable-instruments
+if test "${MOZ_ARTIFACT}" != "1"; then
+  # ac_add_options --enable-warnings-as-errors
+  ac_add_options --with-ccache=sccache
+  # ac_add_options --enable-logrefcnt
+fi
+# ac_add_options --enable-clang-plugin
+# ac_add_options --enable-dmd
+
+# Linking
+if test "${MOZ_ARTIFACT}" != "1"; then
+  ac_add_options --disable-strip
+  ac_add_options --disable-install-strip
+fi
+
+# Testing
+# (none)

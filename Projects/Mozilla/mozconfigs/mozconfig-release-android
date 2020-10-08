@@ -1,0 +1,29 @@
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-android
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=mobile/android
+# ac_add_options --target=arm-linux-androideabi
+ac_add_options --target=i386-linux-android
+
+# Features
+ac_add_options --disable-crashreporter
+
+# Compiling and Debugging
+ac_add_options --disable-debug
+if test "${MOZ_ARTIFACT}" != "1"; then
+  ac_add_options --with-ccache=sccache
+  ac_add_options --enable-pie
+fi
+
+# SDKs
+if test "${MOZ_ARTIFACT}" != "1"; then
+  ac_add_options --with-android-ndk="$HOME/projects/android-ndk-r15c"
+fi
+ac_add_options --with-android-sdk="$HOME/projects/android-sdk"
+
+# Linking
+ac_add_options --disable-strip

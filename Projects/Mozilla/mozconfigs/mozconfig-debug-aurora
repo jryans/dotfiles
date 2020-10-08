@@ -1,0 +1,23 @@
+. $topsrcdir/browser/config/mozconfig
+. $topsrcdir/build/macosx/mozconfig.common
+
+export CC="clang"
+export CXX="clang++"
+export CFLAGS="-fcolor-diagnostics"
+export CXXFLAGS="-fcolor-diagnostics"
+
+export MOZ_PSEUDO_DERECURSE=1
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-aurora
+
+mk_add_options AUTOCONF=autoconf213
+
+ac_add_options --enable-debug="-gfull"
+ac_add_options --disable-optimize
+ac_add_options --enable-instruments
+
+ac_add_options --with-macos-sdk=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+ac_add_options --enable-logrefcnt
+
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip

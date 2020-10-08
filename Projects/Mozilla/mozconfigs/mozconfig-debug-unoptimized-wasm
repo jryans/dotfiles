@@ -1,0 +1,25 @@
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=browser
+
+# Target
+ac_add_options --target=wasm32-unknown-emscripten
+
+# Features
+ac_add_options --disable-crashreporter
+ac_add_options --enable-debug-js-modules
+
+# Compiling and Debugging
+ac_add_options --enable-debug="-gfull"
+
+# Linking
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip
+
+# Testing
+# (none)
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-unoptimized-wasm

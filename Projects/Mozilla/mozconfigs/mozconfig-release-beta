@@ -1,0 +1,38 @@
+# Compiler Flags
+export CC="clang"
+export CXX="clang++"
+export CFLAGS="-fcolor-diagnostics"
+export CXXFLAGS="-fcolor-diagnostics"
+
+# Build System
+# export BUILD_SYSTEM_TELEMETRY
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-beta
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=browser
+
+# Features
+ac_add_options --disable-crashreporter
+ac_add_options --enable-debug-js-modules
+# ac_add_options --with-l10n-base=@TOPSRCDIR@/../l10n
+
+# Compiling and Debugging
+ac_add_options --disable-debug
+ac_add_options --enable-warnings-as-errors
+if test "${CCACHE}" != "0"; then
+  ac_add_options --with-ccache
+fi
+ac_add_options --enable-logrefcnt
+
+# Linking
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip
+
+# Testing
+
+. "$topsrcdir/build/mozconfig.common.override"

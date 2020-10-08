@@ -1,0 +1,25 @@
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-b2gdroid
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=mobile/android/b2gdroid
+ac_add_options --target=arm-linux-androideabi
+
+# Features
+ac_add_options --disable-crashreporter
+export GAIADIR=/Users/jryans/projects/mozilla/gaia
+
+# Compiling and Debugging
+ac_add_options --disable-debug
+ac_add_options --with-ccache
+ac_add_options --enable-pie
+
+# SDKs
+ac_add_options --with-android-ndk="$HOME/projects/android-ndk-r8e"
+ac_add_options --with-android-sdk="$HOME/projects/android-sdk"
+
+# Linking
+ac_add_options --disable-strip

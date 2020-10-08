@@ -1,0 +1,40 @@
+# Compiler Flags
+# if test "${MOZ_ARTIFACT}" != "1"; then
+  # JRS: These seem to be the defaults now
+  # export CC="clang"
+  # export CXX="clang++"
+  # export CFLAGS="-fcolor-diagnostics"
+  # export CXXFLAGS="-fcolor-diagnostics"
+# fi
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=browser
+
+# Features
+ac_add_options --disable-crashreporter
+ac_add_options --enable-debug-js-modules
+# ac_add_options --with-l10n-base=@TOPSRCDIR@/../l10n
+
+# Compiling and Debugging
+ac_add_options --disable-debug
+if test "${MOZ_ARTIFACT}" != "1"; then
+  # ac_add_options --enable-rust-debug
+  # ac_add_options --enable-warnings-as-errors
+  ac_add_options --with-ccache=sccache
+  # ac_add_options --enable-logrefcnt
+fi
+
+# Linking
+if test "${MOZ_ARTIFACT}" != "1"; then
+  ac_add_options --disable-strip
+  ac_add_options --disable-install-strip
+fi
+
+# Testing
+# (none)

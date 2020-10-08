@@ -1,0 +1,13 @@
+CCACHE=0
+
+. "$topsrcdir/.mozconfig-release"
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-nocompile
+
+# Features
+ac_add_options --enable-crashreporter
+
+# Compiling and Debugging
+# ac_add_options --enable-artifact-builds
+ac_add_options --disable-compile-environment

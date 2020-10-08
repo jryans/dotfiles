@@ -1,0 +1,16 @@
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-android
+
+mk_add_options AUTOCONF=autoconf213
+
+ac_add_options --enable-application=mobile/android
+ac_add_options --target=arm-linux-androideabi
+
+ac_add_options --enable-debug
+ac_add_options --enable-debug-symbols
+ac_add_options --disable-optimize
+ac_add_options --with-ccache
+
+ac_add_options --with-android-ndk="$HOME/projects/android-ndk-r15c"
+ac_add_options --with-android-sdk="$HOME/projects/android-sdk"
+
+ac_add_options --disable-strip

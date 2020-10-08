@@ -1,0 +1,7 @@
+. "$topsrcdir/.mozconfig-debug"
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-optimized
+
+# Compiling and Debugging
+# ac_add_options --disable-logrefcnt

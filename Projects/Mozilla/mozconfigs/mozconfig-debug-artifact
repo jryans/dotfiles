@@ -1,0 +1,15 @@
+MOZ_ARTIFACT=1
+
+. "$topsrcdir/.mozconfig-debug"
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-artifact
+
+# Features
+ac_add_options --enable-crashreporter
+
+# Compiling and Debugging
+ac_add_options --enable-artifact-builds
+# ac_add_options --enable-artifact-build-symbols
+# ac_add_options --disable-compile-environment
+export MOZ_DEBUG=1

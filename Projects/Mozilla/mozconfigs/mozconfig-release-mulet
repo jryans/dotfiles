@@ -1,0 +1,32 @@
+# Compiler Flags
+export CC="clang"
+export CXX="clang++"
+export CFLAGS="-fcolor-diagnostics"
+export CXXFLAGS="-fcolor-diagnostics"
+
+# objdir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-mulet
+
+# Make Options
+mk_add_options AUTOCONF=autoconf213
+
+# Application
+ac_add_options --enable-application=b2g/dev
+
+# Features
+ac_add_options --disable-libjpeg-turbo
+ac_add_options --disable-crashreporter
+ac_add_options --enable-debug-js-modules
+
+# Compiling and Debugging
+ac_add_options --disable-debug
+# ac_add_options --enable-warnings-as-errors
+ac_add_options --with-ccache
+
+# Linking
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip
+
+# Testing
+
+. "$topsrcdir/build/mozconfig.common.override"
