@@ -13,7 +13,7 @@ ac_add_options --enable-debug-js-modules
 ac_add_options --disable-ctypes
 
 # Compiling and Debugging
-ac_add_options --enable-debug="-gfull"
+ac_add_options --enable-debug
 
 # Linking
 ac_add_options --disable-strip
