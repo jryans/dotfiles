@@ -11,7 +11,6 @@
   "editor.formatOnPaste": false,
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
-  "editor.autoIndent": true,
 
   "editor.rulers": [ 80, 90 ],
   "[python]": {
