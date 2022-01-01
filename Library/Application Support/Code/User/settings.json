@@ -12,6 +12,7 @@
   "editor.formatOnPaste": false,
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
+  "rewrap.autoWrap.enabled": true,
 
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
