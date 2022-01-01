@@ -82,6 +82,7 @@ alias serve="http-server -p 9000 -S -C localhost.crt -K localhost.key"
 alias rsync-push="rsync -avuPzhn /Users/jryans/Downloads jryans@192.168.1.110:/Users/jryans"
 alias rm-pyc="find . -name \*.pyc -exec rm {} \;"
 alias ninja="ninja $MAKEFLAGS"
+alias toggl='curl -s -u "$(cat ~/.togglrc):api_token" "https://api.track.toggl.com/reports/api/v2/summary?user_agent=jryans@gmail.com&workspace_id=3501486&since=$(date +%Y-%m-%d)" | fx .data ".map(i => [i.title.project, i.time / (1000 * 60 * 60)])"'
 
 fe() {
   find . -type d -depth 1 | parallel --timeout 20 "echo -e '\033[32m{}\033[0m'; cd {}; $*"
