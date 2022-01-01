@@ -123,21 +123,33 @@
   },
 
   "javascript.validate.enable": false,
-  "typescript.disableAutomaticTypeAcquisition": true,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
 
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.clang_format_fallbackStyle": "Mozilla",
 
-  "python.workspaceSymbols.enabled": false,
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.languageServer": "Pylance",
 
   "eslint.run": "onSave",
   "eslint.options": {
     "ignore": false
   },
+  "eslint.packageManager": "yarn",
 
   "go.buildOnSave": "off",
+
+  "FSharp.useSdkScripts": true,
+
+  "rust-analyzer.updates.askBeforeDownload": false,
+  "rust-analyzer.lens.enable": false,
+
+  "magicRacket.languageServer.command": "/Users/jryans/Projects/Racket/racket/racket/bin/racket",
+  "magicRacket.general.racketPath": "/Users/jryans/Projects/Racket/racket/racket/bin/racket",
+  "magicRacket.general.racoPath": "/Users/jryans/Projects/Racket/racket/racket/bin/raco",
 
   "beancount.separatorColumn": 64,
 
