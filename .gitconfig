@@ -29,7 +29,7 @@
   au = add -u
   qr = qrebase
   msg = log -n 1 --pretty=format:%B
-  nb = "!f(){ git checkout -b $1 origin/master; }; f"
+  nb = "!f(){ git checkout -b $1 origin/main; }; f"
   ch = checkout
 [core]
   trustctime = false
@@ -62,3 +62,5 @@
   version-check = 1591227048
 [pull]
   rebase = true
+[init]
+	defaultBranch = main
