@@ -5,6 +5,7 @@
 
   "workbench.iconTheme": null,
   "workbench.colorTheme": "Base16 Dark Tomorrow",
+  "vscode-json-editor.theme": "dark",
 
   "editor.tabSize": 2,
   "editor.formatOnType": true,
