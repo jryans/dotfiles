@@ -1,6 +1,6 @@
 CCACHE=0
 
-. "$topsrcdir/.mozconfig-release"
+. ../mozconfigs/mozconfig-release
 
 # objdir
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-nocompile

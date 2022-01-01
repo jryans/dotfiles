@@ -1,6 +1,6 @@
 MOZ_ARTIFACT=1
 
-. "$topsrcdir/.mozconfig-debug"
+. ../mozconfigs/mozconfig-debug
 
 # objdir
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug-artifact

@@ -1,6 +1,6 @@
 MOZ_ARTIFACT=1
 
-. "$topsrcdir/.mozconfig-release"
+. ../mozconfigs/mozconfig-release
 
 # objdir
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-artifact

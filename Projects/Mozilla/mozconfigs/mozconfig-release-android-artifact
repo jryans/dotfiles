@@ -1,6 +1,6 @@
 MOZ_ARTIFACT=1
 
-. "$topsrcdir/.mozconfig-release-android"
+. ../mozconfigs/mozconfig-release-android
 
 # objdir
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-release-android-artifact
