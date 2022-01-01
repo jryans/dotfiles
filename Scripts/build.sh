@@ -118,7 +118,6 @@ export STEM_SOURCE_DIR="/Users/jryans/Projects/tor/stem"
 
 # RISC-V
 export RISCV="/Users/jryans/Projects/boom-template/rocket-chip/riscv-tools/target"
-export PATH="${RISCV}/bin:${PATH}"
 
 # Electron
 # cd electron-project
