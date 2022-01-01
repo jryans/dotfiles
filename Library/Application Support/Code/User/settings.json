@@ -252,6 +252,7 @@
     "markdown",
     "plaintext"
   ],
+  "cSpell.diagnosticLevel": "Hint",
 
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "none",
