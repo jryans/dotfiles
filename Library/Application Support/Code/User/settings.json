@@ -160,6 +160,8 @@
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.extension.toc.updateOnSave": false,
 
+  "redhat.telemetry.enabled": true,
+
   "workbench.activityBar.visible": true,
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
