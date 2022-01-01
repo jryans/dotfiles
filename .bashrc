@@ -110,6 +110,7 @@ alias gpt='git push && git push --tags'
 
 # Android
 alias carem='adb forward tcp:9222 localabstract:chrome_devtools_remote'
+export ANDROID_SDK_ROOT="${PROJPATH}/android-sdk"
 
 # DevTools
 alias bdt='./mach build toolkit/devtools browser'
