@@ -80,6 +80,8 @@
   "git.autorefresh": false,
   "git.detectSubmodules": false,
   "git.enableSmartCommit": true,
+  "git.terminalAuthentication": false,
+  "github.gitAuthentication": false,
 
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.scopes": [
