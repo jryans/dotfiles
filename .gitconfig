@@ -58,8 +58,8 @@
 [commit]
   cleanup = strip
 [cinnabar]
-  helper = /Users/jryans/Projects/git-cinnabar/git-cinnabar-helper
-  version-check = 1591227048
+	helper = /Users/jryans/Projects/git-cinnabar/git-cinnabar-helper
+	version-check = 1621789741
 [pull]
   rebase = true
 [init]
