@@ -5,7 +5,6 @@
 
   "workbench.iconTheme": null,
   "workbench.colorTheme": "Base16 Dark Tomorrow",
-  "window.titleBarStyle": "custom",
 
   "editor.tabSize": 2,
   "editor.formatOnType": true,
