@@ -3,8 +3,8 @@
 # KLEE uClibc for Vigor
 alias klee-uclibc-vigor-configure="./configure "\
 "--make-llvm-lib "\
-"--with-llvm-config=${PROJPATH}/llvm-project/build-for-vigor/bin/llvm-config "\
-"--with-cc=${PROJPATH}/llvm-project/build-for-vigor/bin/clang && "\
+"--with-llvm-config=${PROJPATH}/LLVM/llvm/build-for-vigor/bin/llvm-config "\
+"--with-cc=${PROJPATH}/LLVM/llvm/build-for-vigor/bin/clang && "\
 "cp ${PROJPATH}/vigor-verified-network/install/klee-uclibc.config .config"
 
 # KLEE
@@ -23,9 +23,9 @@ alias klee-vigor-configure="mkdir -p ${PROJPATH}/klee/build-for-vigor && "\
 "-D CMAKE_PREFIX_PATH=${PROJPATH}/z3/build-for-vigor "\
 "-D CMAKE_INCLUDE_PATH=${PROJPATH}/z3/build-for-vigor/include "\
 "-D CMAKE_CXX_FLAGS='-fno-rtti' "\
-"-D LLVM_CONFIG_BINARY=${PROJPATH}/llvm-project/build-for-vigor/bin/llvm-config "\
-"-D LLVMCC=${PROJPATH}/llvm-project/build-for-vigor/bin/clang "\
-"-D LLVMCXX=${PROJPATH}/llvm-project/build-for-vigor/bin/clang++ "\
+"-D LLVM_CONFIG_BINARY=${PROJPATH}/LLVM/llvm/build-for-vigor/bin/llvm-config "\
+"-D LLVMCC=${PROJPATH}/LLVM/llvm/build-for-vigor/bin/clang "\
+"-D LLVMCXX=${PROJPATH}/LLVM/llvm/build-for-vigor/bin/clang++ "\
 "-D KLEE_UCLIBC_PATH=${PROJPATH}/klee-uclibc "\
 "-D BUILD_SHARED_LIBS=OFF "\
 "-D ENABLE_KLEE_ASSERTS=ON "\
@@ -38,16 +38,16 @@ alias klee-vigor-configure="mkdir -p ${PROJPATH}/klee/build-for-vigor && "\
 #    CXXFLAGS="-D_GLIBCXX_USE_CXX11_ABI=0" \
 
 # LLVM for Rust / WASM
-alias llvm-wasm-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-wasm && "\
-"cd ${PROJPATH}/llvm-project/build-for-wasm && "\
+alias llvm-wasm-configure="mkdir -p ${PROJPATH}/LLVM/llvm/build-for-wasm && "\
+"cd ${PROJPATH}/LLVM/llvm/build-for-wasm && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
 "-D LLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly "\
 "../llvm"
 
 # LLVM for JFS
-alias llvm-jfs-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
-"cd ${PROJPATH}/llvm-project/build-for-jfs && "\
+alias llvm-jfs-configure="mkdir -p ${PROJPATH}/LLVM/llvm/build-for-jfs && "\
+"cd ${PROJPATH}/LLVM/llvm/build-for-jfs && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
 "-D LLVM_OPTIMIZED_TABLEGEN=ON "\
@@ -65,8 +65,8 @@ alias llvm-jfs-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-jfs && "\
 # TODO: Assert correct LLVM version
 # Projects clang;compiler-rt;libcxx enabled via symlinks
 # "-D CMAKE_CXX_FLAGS='-D_GLIBCXX_USE_CXX11_ABI=0' "\
-alias llvm-vigor-configure="mkdir -p ${PROJPATH}/llvm-project/build-for-vigor && "\
-"cd ${PROJPATH}/llvm-project/build-for-vigor && "\
+alias llvm-vigor-configure="mkdir -p ${PROJPATH}/LLVM/llvm/build-for-vigor && "\
+"cd ${PROJPATH}/LLVM/llvm/build-for-vigor && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
 "-D LLVM_TARGETS_TO_BUILD=X86 "\
@@ -94,7 +94,7 @@ alias jfs-configure="mkdir -p ${PROJPATH}/jfs/build && "\
 "cd ${PROJPATH}/jfs/build && "\
 "cmake -G Ninja "\
 "-D CMAKE_BUILD_TYPE=Release "\
-"-D LLVM_DIR=${PROJPATH}/llvm-project/build-for-jfs/lib/cmake/llvm "\
+"-D LLVM_DIR=${PROJPATH}/LLVM/llvm/build-for-jfs/lib/cmake/llvm "\
 "-D Z3_DIR=${PROJPATH}/z3/build-for-jfs "\
 "-D ENABLE_JFS_ASSERTS=ON "\
 ".."
