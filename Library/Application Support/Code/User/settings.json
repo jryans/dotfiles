@@ -86,11 +86,9 @@
     "document"
   ],
   "gitlens.views.repositories.autoRefresh": false,
-  "gitlens.views.repositories.enabled": false,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
   "gitlens.keymap": "chorded",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -99,8 +97,6 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
   },
   "gitlens.statusBar.reduceFlicker": true,
 
