@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Source Code Pro",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "500",
 
   "workbench.iconTheme": null,
