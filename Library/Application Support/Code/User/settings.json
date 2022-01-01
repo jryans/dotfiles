@@ -38,7 +38,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
   "explorer.openEditors.visible": 0,
-  "breadcrumbs.enabled": true,
 
   "files.exclude": {
     "**/.git": true,
