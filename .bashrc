@@ -151,6 +151,12 @@ alias mr-stylo='STYLO_FORCE_ENABLED=1 mr'
 alias mach-stylo='STYLO_FORCE_ENABLED=1 ./mach'
 alias mach-reftest-svg='./mach reftest --setpref=reftest.compareStyloToGecko=true'
 
+# Zotero
+alias zr='./staging/Zotero.app/Contents/MacOS/zotero -P development -datadir profile -ZoteroDebug -foreground'
+# May want to tweak `dataDirectory.js` to save the data dir in prefs after first
+# load?
+alias zbr='/Applications/Zotero\ Beta.app/Contents/MacOS/zotero -P development -datadir profile -ZoteroDebug -foreground'
+
 # Go
 export GOPATH=${PROJPATH}/go
 export PATH="${PATH}:${GOPATH}/bin"
