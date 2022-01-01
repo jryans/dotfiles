@@ -108,5 +108,9 @@
     "key": "cmd+m",
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
   }
 ]
