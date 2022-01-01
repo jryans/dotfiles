@@ -162,7 +162,10 @@ export GOPATH=${PROJPATH}/go
 export PATH="${PATH}:${GOPATH}/bin"
 
 # Rust
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+# The src path now differs by version after changes in 1.47. Tools like
+# `rust-analyzer` seem to have their own detection anyhow, so disabling this for
+# the moment.
+# export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export CARGO_HOME=$HOME/.cargo
 export RUSTUP_HOME=$HOME/.rustup
 
