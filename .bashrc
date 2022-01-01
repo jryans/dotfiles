@@ -29,7 +29,7 @@ export LANG="en_US.UTF-8"
 export EDITOR="vim"
 
 export PROJPATH="${HOME}/Projects"
-export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/FlameGraph:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/tools:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:${PROJPATH}/FlameGraph:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
 [ ! -z "$BREW" ] && export PATH="$PATH:/usr/local/opt/go/bin:/usr/local/opt/vim/bin"
 
 HISTSIZE=-1
