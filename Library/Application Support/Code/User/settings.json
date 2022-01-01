@@ -13,26 +13,27 @@
   "files.insertFinalNewline": true,
 
   "editor.rulers": [ 80, 90 ],
-  "[python]": {
-    "editor.rulers": [ 99 ]
-  },
   "[rust]": {
     "editor.rulers": [ 99 ]
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": false,
   },
   "[beancount]": {
-    "editor.rulers": [ 70 ]
+    "editor.rulers": [ 70 ],
   },
   "[makefile]": {
     "editor.detectIndentation": false,
     "editor.insertSpaces": false,
     "editor.tabSize": 2,
   },
-  "editor.renderIndentGuides": false,
+  "[racket]": {
+    "editor.rulers": [ 70, 102 ],
+  },
   "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.cursorSurroundingLines": 4,
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
