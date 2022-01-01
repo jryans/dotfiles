@@ -170,6 +170,8 @@
   "problems.decorations.enabled": false,
   "window.restoreWindows": "all",
   "workbench.list.keyboardNavigation": "filter",
+  "workbench.editor.untitled.hint": "hidden",
+  "debug.toolBarLocation": "docked",
 
   "cSpell.language": "en,en-GB,en-US",
   "cSpell.userWords": [
@@ -261,4 +263,5 @@
 
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
 }
