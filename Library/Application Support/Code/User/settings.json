@@ -158,6 +158,7 @@
   "beancount.separatorColumn": 64,
 
   "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.toc.updateOnSave": false,
 
   "workbench.activityBar.visible": true,
   "extensions.ignoreRecommendations": true,
