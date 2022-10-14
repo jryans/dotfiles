@@ -324,4 +324,5 @@
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": true,
+  "diffEditor.ignoreTrimWhitespace": false,
 }
