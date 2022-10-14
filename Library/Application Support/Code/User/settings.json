@@ -180,6 +180,7 @@
   "workbench.editor.untitled.hint": "hidden",
   "debug.toolBarLocation": "docked",
 
+  "cSpell.diagnosticLevel": "Hint",
   "cSpell.language": "en,en-GB,en-US",
   "cSpell.userWords": [
     "alastair",
@@ -266,7 +267,6 @@
     "markdown",
     "plaintext"
   ],
-  "cSpell.diagnosticLevel": "Hint",
 
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "none",
