@@ -76,7 +76,8 @@
     "Makefrag*": "makefile",
     "*.ipynb": "json",
     "*.scrbl": "racket",
-    "*.sps": "scheme"
+    "*.sps": "scheme",
+    "*.lsp": "scheme"
   },
 
   "extensions.autoUpdate": false,
