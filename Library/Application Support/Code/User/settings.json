@@ -159,9 +159,6 @@
 
   "go.buildOnSave": "off",
 
-  "FSharp.useSdkScripts": true,
-
-  "rust-analyzer.updates.askBeforeDownload": false,
   "rust-analyzer.lens.enable": false,
 
   "magicRacket.languageServer.command": "/Users/jryans/Projects/Racket/racket/racket/bin/racket",
