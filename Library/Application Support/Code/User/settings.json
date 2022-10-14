@@ -325,4 +325,6 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
 }
