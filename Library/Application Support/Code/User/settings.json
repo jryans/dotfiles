@@ -217,6 +217,8 @@
   "terminal.integrated.minimumContrastRatio": 1,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.persistentSessionScrollback": 1000,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.language": "en,en-GB,en-US",
