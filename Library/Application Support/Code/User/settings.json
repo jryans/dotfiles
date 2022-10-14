@@ -13,6 +13,8 @@
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
   "rewrap.autoWrap.enabled": true,
+  // Removes `-` so that Racket names are easily selectable
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
 
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
