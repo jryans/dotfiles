@@ -215,6 +215,8 @@
   "terminal.integrated.tabs.enabled": false,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.persistentSessionScrollback": 1000,
 
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.language": "en,en-GB,en-US",
