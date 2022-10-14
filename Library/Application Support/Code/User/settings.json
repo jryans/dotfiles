@@ -160,6 +160,7 @@
   "go.buildOnSave": "off",
 
   "rust-analyzer.lens.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
 
   "magicRacket.languageServer.command": "/Users/jryans/Projects/Racket/racket/racket/bin/racket",
   "magicRacket.general.racketPath": "/Users/jryans/Projects/Racket/racket/racket/bin/racket",
