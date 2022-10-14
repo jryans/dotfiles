@@ -19,6 +19,9 @@
   // Removes `-` so that Racket names are easily selectable
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.folding": false,
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.cursorSurroundingLines": 4,
 
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
@@ -44,9 +47,6 @@
   "[racket]": {
     "editor.rulers": [ 70, 102 ],
   },
-  "editor.minimap.enabled": false,
-  "editor.guides.indentation": false,
-  "editor.cursorSurroundingLines": 4,
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
