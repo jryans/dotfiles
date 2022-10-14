@@ -115,7 +115,7 @@
     "suppressNoRepositoryWarning": false,
   },
   "gitlens.statusBar.reduceFlicker": true,
-
+  "gitlens.blame.format": "${message|25?} ${agoOrDate|14-}",
   "gitlens.menus": {
     "editor": {
       "blame": false,
