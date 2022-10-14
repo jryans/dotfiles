@@ -213,6 +213,7 @@
     "terminal.ansiBrightYellow": "#f0cb91",
   },
   "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.minimumContrastRatio": 1,
 
   "cSpell.diagnosticLevel": "Hint",
