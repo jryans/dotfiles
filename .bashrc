@@ -105,6 +105,8 @@ export CHROMIUM_BUILDTOOLS_PATH="${PROJPATH}/electron-project/src/buildtools"
 # Node.js
 # alias node='env NODE_NO_READLINE=1 rlwrap node'
 alias noder='repl.history'
+# Disable all Husky-based commit hooks
+export HUSKY=0
 
 # Git
 alias lst="git log -n 3 | grep '#' | head -n 1 | cut -c5-"
