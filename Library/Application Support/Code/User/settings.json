@@ -85,6 +85,7 @@
   },
 
   "extensions.autoUpdate": false,
+  "task.autoDetect": "off",
 
   "git.enabled": true,
   "git.countBadge": "off",
