@@ -146,6 +146,7 @@
 
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "C_Cpp.workspaceParsingPriority": "low",
 
   "python.pythonPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
