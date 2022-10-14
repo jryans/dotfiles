@@ -18,9 +18,11 @@ else
   SED="sed"
 fi
 
+# Homebrew
 if hash brew 2>/dev/null; then
   BREW=true
 fi
+[ ! -z "$BREW" ] && export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK="true"
 
 PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
 PROMPT_DIRTRIM=2
