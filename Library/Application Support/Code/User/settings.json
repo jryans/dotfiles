@@ -176,7 +176,7 @@
   "search.smartCase": true,
   "problems.decorations.enabled": false,
   "window.restoreWindows": "all",
-  "workbench.list.keyboardNavigation": "filter",
+  "workbench.list.defaultFindMode": "filter",
   "workbench.editor.untitled.hint": "hidden",
   "debug.toolBarLocation": "docked",
 
