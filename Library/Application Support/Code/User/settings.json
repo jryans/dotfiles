@@ -27,6 +27,7 @@
       "strings": "off",
       "other": "off"
     },
+    "editor.unicodeHighlight.invisibleCharacters": true,
   },
   "[beancount]": {
     "editor.rulers": [ 70 ],
