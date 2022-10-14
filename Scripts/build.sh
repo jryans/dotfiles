@@ -1,4 +1,5 @@
 ## Build commands from various projects
+## No longer loaded at startup... better to use project-local tasks instead
 
 # KLEE uClibc for Vigor
 alias klee-uclibc-vigor-configure="./configure "\

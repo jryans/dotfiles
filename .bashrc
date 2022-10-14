@@ -180,6 +180,4 @@ $(type security &> /dev/null) && export CHANGELOG_GITHUB_TOKEN=$(security find-g
 GRAALVM_HOME="${PROJPATH}/Malleable/Experiments/Polyglot"
 export PATH="${PATH}:${GRAALVM_HOME}/mx"
 
-[[ -s $HOME/Scripts/build.sh ]] && source $HOME/Scripts/build.sh
-[[ -s $HOME/Scripts/dpdk.sh ]] && source $HOME/Scripts/dpdk.sh
-
+[[ -s $HOME/Scripts/run.sh ]] && source $HOME/Scripts/run.sh
