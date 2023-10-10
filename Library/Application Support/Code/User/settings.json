@@ -22,6 +22,8 @@
   "editor.minimap.enabled": false,
   "editor.guides.indentation": false,
   "editor.cursorSurroundingLines": 4,
+  "editor.stickyScroll.enabled": true,
+  "notebook.stickyScroll.enabled": true,
 
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
