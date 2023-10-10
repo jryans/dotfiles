@@ -25,7 +25,8 @@
 
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
-    "editor.rulers": [ 99 ]
+    "editor.rulers": [ 99 ],
+    "editor.tabSize": 4,
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
