@@ -71,6 +71,7 @@ hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 hash direnv 2>/dev/null && eval "$(direnv hook bash)"
 [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
+export FZF_DEFAULT_OPTS="--scheme=history"
 
 # General
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
