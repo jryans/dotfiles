@@ -200,6 +200,7 @@
 
   "redhat.telemetry.enabled": true,
 
+  "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.message.latexlog.exclude": [
     "Overfull",
     "Underfull"
