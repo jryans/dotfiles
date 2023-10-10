@@ -49,12 +49,13 @@ export MAVEN_OPTS="-Xmx1024M"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
+# Make, Ninja
 if [[ "$OS" == 'mac' ]]; then
   CORES="$(sysctl -n hw.ncpu)"
 else
   CORES="$(nproc)"
 fi
-export MAKEFLAGS="-j $(echo "${CORES} - 2" | bc)"
+export MAKEFLAGS="-j $(echo "${CORES} - 4" | bc)"
 
 # Shell integrations
 [ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
