@@ -71,3 +71,8 @@
   insteadOf = git://github.com
 [advice]
   addIgnoredFile = false
+[sendemail]
+  smtpUser = jryans@gmail.com
+  smtpServer = smtp.gmail.com
+  smtpEncryption = tls
+  smtpServerPort = 587
