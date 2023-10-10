@@ -57,6 +57,10 @@ else
 fi
 export MAKEFLAGS="-j $(echo "${CORES} - 4" | bc)"
 
+# Less
+# Allow color escape sequences by default
+export LESS="-R"
+
 # Shell integrations
 [ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
 [[ -s /etc/bash_completion ]] && source /etc/bash_completion
