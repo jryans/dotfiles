@@ -52,6 +52,7 @@
   indentHeuristic = true
   colorMoved = default
   wsErrorHighlight = old,new
+  guitool = bc
 [fetch]
   prune = true
 [merge]
