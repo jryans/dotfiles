@@ -25,6 +25,8 @@
   "editor.stickyScroll.enabled": true,
   "notebook.stickyScroll.enabled": true,
 
+  "diffEditor.maxComputationTime": 10000,
+
   "editor.rulers": [ 80, 90 ],
   "[rust]": {
     "editor.rulers": [ 99 ],
