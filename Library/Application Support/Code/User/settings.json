@@ -194,8 +194,6 @@
     "Overfull",
     "Underfull"
   ],
-
-  "workbench.activityBar.visible": true,
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
