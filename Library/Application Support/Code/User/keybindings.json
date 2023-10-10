@@ -112,5 +112,50 @@
   {
     "key": "shift+cmd+w",
     "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "cmd+m shift+cmd+b",
+    "command": "-latex-workshop.shortcut.mathbb",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+b",
+    "command": "-latex-workshop.shortcut.mathbf",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+c",
+    "command": "-latex-workshop.shortcut.mathcal",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+i",
+    "command": "-latex-workshop.shortcut.mathit",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+r",
+    "command": "-latex-workshop.shortcut.mathrm",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+s",
+    "command": "-latex-workshop.shortcut.mathsf",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "cmd+m cmd+t",
+    "command": "-latex-workshop.shortcut.mathtt",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "-latex-workshop.clean",
+    "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   }
 ]
