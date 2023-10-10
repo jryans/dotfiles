@@ -178,6 +178,8 @@
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
 
+  "jupyter.askForKernelRestart": false,
+
   "eslint.run": "onSave",
   "eslint.options": {
     "ignore": false
