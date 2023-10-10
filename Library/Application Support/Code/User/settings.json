@@ -191,6 +191,8 @@
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 
+  "fennel-ls.executable": "/Users/jryans/Projects/Fennel/fennel-ls/fennel-ls",
+
   "beancount.separatorColumn": 64,
 
   "markdown.extension.orderedList.autoRenumber": false,
