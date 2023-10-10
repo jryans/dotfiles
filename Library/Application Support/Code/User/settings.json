@@ -177,7 +177,6 @@
   "eslint.options": {
     "ignore": false
   },
-  "eslint.packageManager": "yarn",
 
   "go.buildOnSave": "off",
 
