@@ -66,8 +66,8 @@
 [pull]
   rebase = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [url "https://github.com"]
-	insteadOf = git://github.com
+  insteadOf = git://github.com
 [advice]
-	addIgnoredFile = false
+  addIgnoredFile = false
