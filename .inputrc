@@ -5,6 +5,10 @@ set convert-meta off
 
 set editing-mode vi
 
+# completion options
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
 # allow the use of the Home/End keys
 "\e[1~": beginning-of-line
 "\e[4~": end-of-line
@@ -13,14 +17,11 @@ set editing-mode vi
 "\e[3~": delete-char
 "\e[2~": quoted-insert
 
-# mappings for "page up" and "page down" to step to the beginning/end
-# of the history
+# mappings for Page Up/Down to step
+# to the beginning/end of the history
 "\e[5~": beginning-of-history
 "\e[6~": end-of-history
 
-# history search
+# history search with Up/Down
 "\e[A": history-search-backward
 "\e[B": history-search-forward
-set show-all-if-ambiguous on
-set completion-ignore-case on
-
