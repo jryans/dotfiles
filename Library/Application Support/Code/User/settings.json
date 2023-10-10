@@ -143,6 +143,23 @@
     }
   },
 
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["u"],
+      "commands": [
+        "undo"
+      ],
+      "silent": true,
+    },
+    {
+      "before": ["C-r"],
+      "commands": [
+        "redo"
+      ],
+      "silent": true,
+    },
+  ],
+
   "javascript.validate.enable": false,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
