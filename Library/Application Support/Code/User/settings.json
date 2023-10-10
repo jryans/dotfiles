@@ -19,7 +19,6 @@
   "rewrap.autoWrap.enabled": true,
   // Removes `-` so that Racket names are easily selectable
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-  "editor.folding": false,
   "editor.minimap.enabled": false,
   "editor.guides.indentation": false,
   "editor.cursorSurroundingLines": 4,
