@@ -205,6 +205,10 @@
     "Overfull",
     "Underfull"
   ],
+
+  "graphviz-interactive-preview.view.transitionDuration": 100,
+  "graphviz-interactive-preview.renderLockAdditionalTimeout": -1,
+
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
