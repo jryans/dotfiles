@@ -57,6 +57,7 @@
   prune = true
 [merge]
   conflictStyle = diff3
+  directoryRenames = true
 [commit]
   cleanup = strip
 [cinnabar]
