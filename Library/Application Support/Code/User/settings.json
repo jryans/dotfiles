@@ -85,7 +85,8 @@
     "*.ipynb": "json",
     "*.scrbl": "racket",
     "*.sps": "scheme",
-    "*.lsp": "scheme"
+    "*.lsp": "scheme",
+    "*.zuo": "scheme"
   },
 
   "extensions.autoUpdate": false,
