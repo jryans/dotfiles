@@ -189,6 +189,7 @@
 
   "rust-analyzer.lens.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 
   "beancount.separatorColumn": 64,
 
