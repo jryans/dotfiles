@@ -201,7 +201,7 @@
   "problems.decorations.enabled": false,
   "window.restoreWindows": "all",
   "workbench.list.defaultFindMode": "filter",
-  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.empty.hint": "hidden",
   "debug.toolBarLocation": "docked",
 
   // Uppercase settings match VS Code, lowercase settings match iTerm2
