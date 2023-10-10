@@ -11,3 +11,10 @@ klee() {
   shift 2
   $HOME/Projects/klee/build-$build/bin/$program "$@"
 }
+
+csmith() {
+  local build=$1
+  local program=$2
+  shift 2
+  $HOME/Projects/csmith/build-$build/src/$program "$@"
+}
