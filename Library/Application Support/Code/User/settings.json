@@ -48,6 +48,9 @@
   "[racket]": {
     "editor.rulers": [ 70, 102 ],
   },
+  "[scheme]": {
+    "editor.rulers": [ 70, 102 ],
+  },
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
