@@ -103,6 +103,7 @@
   "git.autorefresh": false,
   "git.detectSubmodules": false,
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
   "git.terminalAuthentication": false,
   "github.gitAuthentication": false,
 
