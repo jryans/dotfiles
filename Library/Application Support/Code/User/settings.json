@@ -101,7 +101,9 @@
     "*.scrbl": "racket",
     "*.sps": "scheme",
     "*.lsp": "scheme",
-    "*.zuo": "scheme"
+    "*.zuo": "scheme",
+    "*.ms": "scheme",
+    "trace": "plaintext"
   },
 
   "extensions.autoUpdate": false,
