@@ -518,9 +518,15 @@
     "Zotero"
   ],
   "cSpell.enableFiletypes": [
+    "beancount",
+    "cmake",
+    "factor",
     "latex",
+    "makefile",
     "markdown",
-    "plaintext"
+    "plaintext",
+    "racket",
+    "scheme"
   ],
 
   "window.zoomLevel": 0,
