@@ -76,7 +76,13 @@ swapon /dev/nvme0n1p3
 # Create NixOS configuration
 nixos-generate-config --root /mnt
 vim /mnt/etc/nixos/configuration.nix
+
 # Modify according to https://nixos.wiki/wiki/ZFS
+# ...but that seems to be outdated
+# Trying the following from the forum:
+#   boot.supportedFilesystems = [ "zfs" ];
+#   boot.zfs.forceImportAll = false;
+#   boot.zfs.forceImportRoot = false;
 
 # Install
 nixos-install
