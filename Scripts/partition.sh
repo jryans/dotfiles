@@ -28,8 +28,8 @@ blockdev --getpbsz /dev/nvme0n1
 # Create ZFS pool on root partition
 # https://nixos.wiki/wiki/ZFS
 # https://openzfs.github.io/openzfs-docs/man/v2.3/7/zfsprops.7.html
+# Add `-o ashift=12` or similar based on results above
 zpool create \
-  -o ashift=12 \
   -O compression=zstd \
   -O encryption=on \
   -O keyformat=passphrase \
