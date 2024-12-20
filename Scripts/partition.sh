@@ -13,17 +13,17 @@
 # https://nixos.org/manual/nixos/stable/#sec-installation-manual-partitioning
 
 # Create GPT partition table
-parted /dev/XXX -- mklabel gpt
+parted /dev/nvme0n1 -- mklabel gpt
 
 # Create EFI, root, and swap partitions
-parted /dev/XXX -- mkpart ESP fat32 1MB 512MB
-parted /dev/XXX -- set 1 esp on
-parted /dev/XXX -- mkpart root zfs 512MB -4GB
-parted /dev/XXX -- mkpart swap linux-swap -4GB 100%
+parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB
+parted /dev/nvme0n1 -- set 1 esp on
+parted /dev/nvme0n1 -- mkpart root zfs 512MB -4GB
+parted /dev/nvme0n1 -- mkpart swap linux-swap -4GB 100%
 
 # Check sector size for correct `ashift` value
 # https://wiki.archlinux.org/title/ZFS#Advanced_Format_disks
-blockdev --getpbsz /dev/XXX
+blockdev --getpbsz /dev/nvme0n1
 
 # Create ZFS pool on root partition
 # https://nixos.wiki/wiki/ZFS
@@ -39,7 +39,7 @@ zpool create \
   -O atime=off \
   -O mountpoint=none \
   pool \
-  /dev/XXXp2
+  /dev/nvme0n1p2
 
 # Create and mount datasets
 # https://nixos.wiki/wiki/ZFS
@@ -65,13 +65,13 @@ mkdir /mnt/persist
 mount -t zfs pool/safe/persist /mnt/persist
 
 # Create and mount EFI partition
-mkfs.fat -F 32 -n boot /dev/XXXp1
+mkfs.fat -F 32 -n boot /dev/nvme0n1p1
 mkdir /mnt/boot
-mount /dev/XXXp1 /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot
 
 # Create and mount swap partition
-mkswap -L swap /dev/XXXp3
-swapon /dev/XXXp3
+mkswap -L swap /dev/nvme0n1p3
+swapon /dev/nvme0n1p3
 
 # Create NixOS configuration
 nixos-generate-config --root /mnt
