@@ -97,10 +97,6 @@
     "command": "editor.action.fontZoomReset"
   },
   {
-    "key": "alt+cmd+g o",
-    "command": "gitlens.openFileInRemote"
-  },
-  {
     "key": "cmd+q",
     "command": "-workbench.action.quit"
   },
@@ -157,5 +153,17 @@
     "key": "cmd+m",
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "alt+cmd+g f",
+    "command": "gitlens.openFileOnRemote"
+  },
+  {
+    "key": "alt+cmd+g m",
+    "command": "gitlens.openCommitOnRemote"
+  },
+  {
+    "key": "alt+cmd+g y",
+    "command": "gitlens.copyRemoteFileUrlToClipboard"
   }
 ]
