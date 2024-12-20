@@ -187,6 +187,7 @@
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.clang_format_fallbackStyle": "LLVM",
   "C_Cpp.workspaceParsingPriority": "low",
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
 
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
