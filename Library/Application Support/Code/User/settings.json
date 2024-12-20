@@ -205,6 +205,12 @@
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 
+  "zig.checkForUpdate": false,
+  "zig.initialSetupDone": true,
+  "zig.path": "zig",
+  "zig.zls.path": "/Users/jryans/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.formattingProvider": "zls",
+
   "fennel-ls.executable": "/Users/jryans/Projects/Fennel/fennel-ls/fennel-ls",
 
   "beancount.separatorColumn": 64,
