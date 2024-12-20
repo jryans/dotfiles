@@ -273,6 +273,7 @@
   "terminal.integrated.persistentSessionScrollback": 1000,
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.gpuAcceleration": "off",
 
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.language": "en,en-GB,en-US",
