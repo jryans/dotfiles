@@ -105,6 +105,7 @@
     "trace": "plaintext"
   },
 
+  "update.showReleaseNotes": false,
   "extensions.autoUpdate": false,
   "task.autoDetect": "off",
 
