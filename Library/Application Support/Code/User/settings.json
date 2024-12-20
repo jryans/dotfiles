@@ -56,6 +56,10 @@
   "[scheme]": {
     "editor.rulers": [ 70, 102 ],
   },
+  "[factor]": {
+    "editor.rulers": [ 64, 80 ],
+    "editor.tabSize": 4,
+  },
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
