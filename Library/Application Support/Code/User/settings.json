@@ -211,6 +211,10 @@
   "zig.zls.path": "/Users/jryans/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   "zig.formattingProvider": "zls",
 
+  "Lua.format.defaultConfig": {
+    "indent_size": "2"
+  },
+
   "fennel-ls.executable": "/Users/jryans/Projects/Fennel/fennel-ls/fennel-ls",
 
   "beancount.separatorColumn": 64,
