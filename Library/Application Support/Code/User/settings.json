@@ -23,6 +23,7 @@
   "editor.guides.indentation": false,
   "editor.cursorSurroundingLines": 4,
   "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "replace",
   "notebook.stickyScroll.enabled": true,
 
   "diffEditor.maxComputationTime": 10000,
