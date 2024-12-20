@@ -16,10 +16,10 @@
 parted /dev/nvme0n1 -- mklabel gpt
 
 # Create EFI, root, and swap partitions
-parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB
+parted /dev/nvme0n1 -- mkpart esp fat32 1MiB 512MiB
 parted /dev/nvme0n1 -- set 1 esp on
-parted /dev/nvme0n1 -- mkpart root zfs 512MB -4GB
-parted /dev/nvme0n1 -- mkpart swap linux-swap -4GB 100%
+parted /dev/nvme0n1 -- mkpart root 512MiB -4GiB
+parted /dev/nvme0n1 -- mkpart swap linux-swap -4GiB 100%
 
 # Check sector size for correct `ashift` value
 # https://wiki.archlinux.org/title/ZFS#Advanced_Format_disks
