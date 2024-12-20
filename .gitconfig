@@ -4,10 +4,6 @@
   useConfigOnly = true
 [color]
   ui = true
-[diff]
-# tool = bcompare
-[difftool "bcompare"]
-  cmd = bcompare $LOCAL $REMOTE
 [difftool]
   prompt = false
 [rebase]
