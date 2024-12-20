@@ -16,7 +16,7 @@
 parted /dev/nvme0n1 -- mklabel gpt
 
 # Create EFI, root, and swap partitions
-parted /dev/nvme0n1 -- mkpart esp fat32 1MiB 512MiB
+parted /dev/nvme0n1 -- mkpart boot fat32 1MiB 512MiB
 parted /dev/nvme0n1 -- set 1 esp on
 parted /dev/nvme0n1 -- mkpart root 512MiB -4GiB
 parted /dev/nvme0n1 -- mkpart swap linux-swap -4GiB 100%
