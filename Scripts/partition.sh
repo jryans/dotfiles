@@ -45,11 +45,11 @@ zpool create \
 # https://nixos.wiki/wiki/ZFS
 # https://grahamc.com/blog/erase-your-darlings/
 # https://mt-caret.github.io/blog/posts/2020-06-29-optin-state.html
-zfs create -o mountpoint=legacy pool/cache/root
-zfs create -o mountpoint=legacy pool/cache/nix
-zfs create -o mountpoint=legacy pool/cache/log
-zfs create -o mountpoint=legacy pool/safe/home
-zfs create -o mountpoint=legacy pool/safe/persist
+zfs create -p -o mountpoint=legacy pool/cache/root
+zfs create -p -o mountpoint=legacy pool/cache/nix
+zfs create -p -o mountpoint=legacy pool/cache/log
+zfs create -p -o mountpoint=legacy pool/safe/home
+zfs create -p -o mountpoint=legacy pool/safe/persist
 
 zfs snapshot pool/cache/root@empty
 
