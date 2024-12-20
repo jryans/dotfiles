@@ -60,6 +60,9 @@
     "editor.rulers": [ 64, 80 ],
     "editor.tabSize": 4,
   },
+  "[python]": {
+    "editor.tabSize": 4,
+  },
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.revealIfOpen": true,
