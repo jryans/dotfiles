@@ -97,3 +97,7 @@ reboot
 # Add model-specific settings from nixos-hardware
 
 # Eventually, persist things and rollback root on each boot
+
+# To access ZFS data from from live CD again in future
+zpool import -l pool
+# ...then mount as above
