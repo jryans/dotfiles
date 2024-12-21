@@ -90,6 +90,10 @@ vim /mnt/etc/nixos/configuration.nix
 
 # Install
 nixos-install
+
+# Export ZFS pool to make it ready for use by the new machine
+zpool export pool
+
 reboot
 
 # Consider reducing `vm.swappiness`
