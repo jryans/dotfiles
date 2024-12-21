@@ -32,7 +32,7 @@ set ignorecase
 set smartcase
 
 set encoding=utf-8
-set spell
+" set spell
 set spelllang=en_gb
 
 let &t_Cs = "\e[4:3m"
