@@ -92,6 +92,7 @@ vim /mnt/etc/nixos/configuration.nix
 nixos-install
 
 # Export ZFS pool to make it ready for use by the new machine
+umount -l -t zfs
 zpool export pool
 
 reboot
