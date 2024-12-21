@@ -80,9 +80,13 @@ vim /mnt/etc/nixos/configuration.nix
 # Modify according to https://nixos.wiki/wiki/ZFS
 # ...but that seems to be outdated
 # Trying the following from the forum:
+#   # Enable ZFS during boot. 
 #   boot.supportedFilesystems = [ "zfs" ];
+#   boot.initrd.supportedFilesystems = [ "zfs" ];
 #   boot.zfs.forceImportAll = false;
 #   boot.zfs.forceImportRoot = false;
+#   # ZFS expects a host ID to link the pool to the machine.
+#   networking.hostId = "abcd1234";
 
 # Install
 nixos-install
