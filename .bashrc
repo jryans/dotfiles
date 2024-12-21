@@ -24,17 +24,15 @@ if hash brew 2>/dev/null; then
 fi
 [ ! -z "$BREW" ] && export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK="true"
 
-[[ -s /run/current-system/sw/share/git/contrib/completion/git-prompt.sh ]] && source /run/current-system/sw/share/git/contrib/completion/git-prompt.sh
-PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
-PROMPT_DIRTRIM=2
-
 export LANG="en_US.UTF-8"
 export EDITOR="vim"
 
+# Paths
 export PROJPATH="${HOME}/Projects"
 export PATH="${HOME}/bin:${HOME}/.local/bin:${PROJPATH}/Racket/racket/racket/src/build/bin:${HOME}/.cargo/bin:${HOME}/Library/Python/3.12/bin:${HOME}/Library/Application Support/Coursier/bin:${PROJPATH}/FlameGraph:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
 [ ! -z "$BREW" ] && export PATH="$PATH:/usr/local/opt/go/bin:/usr/local/opt/php@7.4/bin:/usr/local/opt/vim/bin"
 
+# History
 HISTSIZE=-1
 HISTFILESIZE=$HISTSIZE
 HISTCONTROL="ignoreboth"
@@ -65,6 +63,7 @@ export LESS="-R"
 # Shell integrations
 [ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
 [[ -s /etc/bash_completion ]] && source /etc/bash_completion
+[[ -s /run/current-system/sw/share/git/contrib/completion/git-prompt.sh ]] && source /run/current-system/sw/share/git/contrib/completion/git-prompt.sh
 hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
 [[ -s "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh" ]] && source "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh"
@@ -73,6 +72,10 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 hash direnv 2>/dev/null && eval "$(direnv hook bash)"
 [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS="--scheme=history"
+
+# Prompt
+PS1='\[\e]1;\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[1;31m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+PROMPT_DIRTRIM=2
 
 # Dot files
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
