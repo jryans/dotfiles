@@ -73,8 +73,15 @@ hash direnv 2>/dev/null && eval "$(direnv hook bash)"
 [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS="--scheme=history"
 
-# General
+# Dot files
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+# On a new system, do the following:
+#  git clone --bare <repo> .dotfiles
+#  <define dotfiles alias above>
+#  dotfiles config --local status.showUntrackedFiles no
+#  dotfiles checkout
+
+# General
 if [[ "$OS" == 'mac' ]]; then
   alias ls='ls -G'
 else
