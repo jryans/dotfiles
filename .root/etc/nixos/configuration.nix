@@ -39,6 +39,15 @@
     };
   };
 
+  services.openssh = {
+    enable = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+    };
+  };
+
   time.timeZone = "Europe/London";
 
   # i18n.defaultLocale = "en_US.UTF-8";
