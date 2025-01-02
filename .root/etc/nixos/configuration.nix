@@ -77,6 +77,7 @@
     bc # Used in shell init scripts (move to user config?)
     fzf # Used in shell init scripts (move to user config?)
     git
+    htop
     vim
     zotero
   ];
