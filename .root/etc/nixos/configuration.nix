@@ -24,6 +24,9 @@
   # ZFS expects a host ID to link the pool to the machine
   networking.hostId = "cad537bd";
 
+  # Scrub ZFS pool monthly
+  services.zfs.autoScrub.enable = true;
+
   networking.hostName = "saturn";
 
   networking.networkmanager.enable = true;
