@@ -50,11 +50,6 @@
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
-  # services.pipewire = {
-  #   enable = true;
-  #   pulse.enable = true;
-  # };
-
   users.users.jryans = {
     isNormalUser = true;
     # Enable sudo and network management
