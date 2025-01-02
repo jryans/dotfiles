@@ -1,0 +1,103 @@
+# Exclude metadata files
+- .DS_Store
+
+# Exclude cache directories
+- /Library/Caches/
+- /Library/Logs/
+- /Library/Saved Application State/
+- /Library/**/Saved Application State/
+
+# Exclude Safari transient data
+- /Library/Safari/Touch Icons Cache/
+- /Library/Safari/Favicon Cache/
+
+# Exclude Chrome transient data
+- /Library/Application Support/Google/Chrome**/Safe Browsing/
+- /Library/Application Support/Google/Chrome**/*Cache/
+
+# Exclude Firefox transient data
+- /Library/Application Support/Firefox/Profiles/**/cache2/
+
+# Exclude Electron app transient data
+- /Library/Application Support/Microsoft/Teams/
+- /Library/Containers/com.microsoft.teams2/
+
+# Exclude build output directories, like: /Users/*/Projects/mozilla/gecko-dev-2/obj-firefox-*
+- /Projects/klee/build*/
+- /Projects/LLVM/**/build*/
+- /Projects/Malleable/Experiments/Polyglot/**/mxbuild/
+- /Projects/Malleable/Experiments/Polyglot/**/build/
+- /Projects/Mozilla/gecko*/obj-*/
+- /Projects/Mozilla/gecko*/target/
+- /Projects/Racket/**/bin/
+- /Projects/Racket/**/boot/
+- /Projects/Racket/**/build/
+- /Projects/Racket/**/compiled/
+- /Projects/Racket/**/doc/
+- /Projects/Racket/**/Contents/
+- /Projects/Racket/**/etc/
+- /Projects/Racket/**/include/
+- /Projects/Racket/**/lib/
+- /Projects/Racket/**/man/
+- /Projects/Racket/**/share/
+- /Projects/Rust/**/build*/
+- /Projects/Rust/**/target/
+
+# Exclude cache directories, like: /Users/*/.cache
+- /.anaconda3/
+- /.cache/
+- /.cargo/
+- /.ccache/
+- /.cocoapods/
+- /.g8/
+- /.gem/
+- /.gradle/
+- /.ivy2/
+- /.julia/
+- /.m2/
+- /.mozbuild/package-frontend/
+- /.mozilla/mozregression/persist/
+- /.mx/
+- /.npm/
+- /.opam/
+- /.rbenv/
+- /.rustup/
+- /.sbt/
+- /Library/Application Support/Bitwig/Bitwig Studio/installed-packages/
+- /Library/Application Support/Dash/DocSets/
+- /Library/Application Support/MacWhisper/models/
+- /Library/Application Support/pypoetry/
+- /Library/Application Support/Texpad/Bundles/
+- /Library/Metadata/CoreSpotlight/
+- /Projects/go/bin/
+- /Projects/go/pkg/
+
+# Exclude unimportant projects
+- /Projects/electron-project/
+
+# Exclude third-party module directories, like: /Users/*/Projects/*/node_modules/*
+- /Projects/**/node_modules/
+
+# Exclude editor cache directories, like: /Users/*/Library/Application Support/Code/User/workspaceStorage/*
+- Code*/*Cache*/
+- Code*/User/workspaceStorage/
+- /.vscode/extensions/*/
+- Notion/*Cache/
+- /Library/Developer/Xcode/DerivedData/
+
+# Exclude iOS simulators and Android emulators
+- /Library/Developer/CoreSimulator/
+- /.android/avd/
+
+# Exclude Steam apps
+- /Library/Application Support/Steam/SteamApps/
+- /Library/Application Support/Steam/Steam.AppBundle/
+
+# Exclude AutoDesk apps
+- /Library/Application Support/Autodesk/webdeploy
+
+# Exclude rented iTunes media
+- /Music/iTunes/iTunes Music/
+
+# Exclude Docker VM
+- /Library/Containers/com.docker.docker/
