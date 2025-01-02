@@ -28,8 +28,16 @@
   services.zfs.autoScrub.enable = true;
 
   networking.hostName = "saturn";
-
   networking.networkmanager.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    publish = {
+      enable = true;
+      domain = true;
+      addresses = true;
+    };
+  };
 
   time.timeZone = "Europe/London";
 
