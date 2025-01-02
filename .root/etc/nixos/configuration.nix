@@ -78,6 +78,7 @@
     fzf # Used in shell init scripts (move to user config?)
     git
     vim
+    zotero
   ];
 
   programs.firefox.enable = true;
