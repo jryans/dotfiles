@@ -42,6 +42,8 @@
 - /Projects/Racket/**/share/
 - /Projects/Rust/**/build*/
 - /Projects/Rust/**/target/
+- /Projects/Zig/**/*zig-cache/
+- /Projects/Zig/**/build*/
 
 # Exclude cache directories, like: /Users/*/.cache
 - /.anaconda3/
