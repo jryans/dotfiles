@@ -82,6 +82,7 @@
     fzf # Used in shell init scripts (move to user config?)
     git
     htop
+    jetbrains-mono
     vim
     vscode
     zotero
