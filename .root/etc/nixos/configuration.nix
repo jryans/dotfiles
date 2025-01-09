@@ -74,11 +74,13 @@
   };
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "enpass"
     "vscode"
   ];
 
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
+    enpass
     fzf # Used in shell init scripts (move to user config?)
     git
     htop
