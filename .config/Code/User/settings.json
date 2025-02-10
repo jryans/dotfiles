@@ -38,6 +38,20 @@
     },
     "editor.unicodeHighlight.invisibleCharacters": true,
   },
+  "[latex]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+  },
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+  },
   "[beancount]": {
     "editor.rulers": [ 70 ],
   },
