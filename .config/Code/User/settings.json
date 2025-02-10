@@ -551,4 +551,5 @@
   "editor.renderControlCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "chat.commandCenter.enabled": false,
 }
