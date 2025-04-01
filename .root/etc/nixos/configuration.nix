@@ -85,6 +85,7 @@
     git
     htop
     jetbrains-mono
+    meld
     vim
     vscode
     zotero
