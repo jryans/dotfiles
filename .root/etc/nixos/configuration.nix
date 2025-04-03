@@ -116,6 +116,7 @@
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     enpass
+    file
     fzf # Used in shell init scripts (move to user config?)
     git
     gnome-extension-manager
