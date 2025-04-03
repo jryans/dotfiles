@@ -83,6 +83,7 @@
     enpass
     fzf # Used in shell init scripts (move to user config?)
     git
+    gnome-extension-manager
     htop
     jetbrains-mono
     meld
