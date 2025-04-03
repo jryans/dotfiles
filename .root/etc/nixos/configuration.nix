@@ -74,10 +74,39 @@
     extraGroups = [ "wheel" "networkmanager" ];
   };
 
-  fonts.packages = with pkgs; [
-    noto-fonts
-    liberation_ttf
-  ];
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      liberation_ttf
+    ];
+    # Map PostScript fonts to Liberation instead of TeX Gyre
+    fontconfig = {
+      localConf = ''
+        <?xml version="1.0"?>
+        <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+        <fontconfig>
+          <match>
+            <test name="family"><string>Helvetica</string></test>
+            <edit name="family" mode="assign" binding="strong">
+              <string>Liberation Sans</string>
+            </edit>
+          </match>
+          <match>
+            <test name="family"><string>Times</string></test>
+            <edit name="family" mode="assign" binding="strong">
+              <string>Liberation Serif</string>
+            </edit>
+          </match>
+          <match>
+            <test name="family"><string>Courier</string></test>
+            <edit name="family" mode="assign" binding="strong">
+              <string>Liberation Mono</string>
+            </edit>
+          </match>
+        </fontconfig>
+      '';
+    };
+  };
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "enpass"
