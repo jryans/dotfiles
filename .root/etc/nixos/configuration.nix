@@ -85,6 +85,7 @@
     git
     gnome-extension-manager
     htop
+    libinput
     jetbrains-mono
     meld
     vim
