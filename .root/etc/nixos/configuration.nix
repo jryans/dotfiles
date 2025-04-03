@@ -125,6 +125,7 @@
     libinput
     jetbrains-mono
     meld
+    patchelf
     vim
     vscode
     zotero
