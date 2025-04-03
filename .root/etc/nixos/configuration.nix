@@ -74,6 +74,11 @@
     extraGroups = [ "wheel" "networkmanager" ];
   };
 
+  fonts.packages = with pkgs; [
+    noto-fonts
+    liberation_ttf
+  ];
+
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "enpass"
     "vscode"
