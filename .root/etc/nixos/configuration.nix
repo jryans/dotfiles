@@ -27,6 +27,7 @@
   # Scrub ZFS pool monthly
   services.zfs.autoScrub.enable = true;
 
+  # Networking
   networking.hostName = "saturn";
   networking.networkmanager.enable = true;
   services.avahi = {
@@ -39,17 +40,8 @@
     };
   };
 
-  services.openssh = {
-    enable = true;
-    settings = {
-      PasswordAuthentication = false;
-      KbdInteractiveAuthentication = false;
-      PermitRootLogin = "no";
-    };
-  };
-
+  # Localisation
   time.timeZone = "Europe/London";
-
   i18n.defaultLocale = "en_GB.UTF-8";
   # console = {
   #   font = "Lat2-Terminus16";
@@ -58,6 +50,15 @@
   # };
 
   services.fwupd.enable = true;
+
+  services.openssh = {
+    enable = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+    };
+  };
 
   services.xserver.enable = true;
 
@@ -98,6 +99,6 @@
 
   # First version of NixOS installed on this machine
   # Used to maintain compatibility with data created in older versions
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "24.11";
 }
 
