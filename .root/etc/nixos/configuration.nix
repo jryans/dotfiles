@@ -128,6 +128,7 @@
     patchelf
     vim
     vscode
+    wirelesstools
     zotero
   ];
 
