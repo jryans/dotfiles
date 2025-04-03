@@ -191,6 +191,7 @@
       "silent": true,
     },
   ],
+  "vim.useCtrlKeys": false,
 
   "javascript.validate.enable": false,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
