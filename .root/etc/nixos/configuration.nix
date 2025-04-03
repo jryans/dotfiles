@@ -84,6 +84,7 @@
     fzf # Used in shell init scripts (move to user config?)
     git
     gnome-extension-manager
+    gnome-tweaks
     htop
     libinput
     jetbrains-mono
