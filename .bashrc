@@ -19,7 +19,7 @@ else
 fi
 
 # Homebrew
-if hash brew 2>/dev/null; then
+if command -v brew >/dev/null 2>&1; then
   BREW=true
 fi
 [ ! -z "$BREW" ] && export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK="true"
@@ -64,12 +64,12 @@ export LESS="-R"
 [ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
 [[ -s /etc/bash_completion ]] && source /etc/bash_completion
 [[ -s /run/current-system/sw/share/git/contrib/completion/git-prompt.sh ]] && source /run/current-system/sw/share/git/contrib/completion/git-prompt.sh
-hash rbenv 2>/dev/null && eval "$(rbenv init -)"
+command -v rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 [[ -s ~/.twig/twig-completion.bash ]] && source ~/.twig/twig-completion.bash
 [[ -s "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh" ]] && source "${PROJPATH}/mozilla/gecko-dev/python/mach/bash-completion.sh"
 # [[ -s ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-hash direnv 2>/dev/null && eval "$(direnv hook bash)"
+command -v direnv >/dev/null 2>&1 && eval "$(direnv hook bash)"
 [[ -s ~/.fzf.bash ]] && source ~/.fzf.bash
 [[ -s /run/current-system/sw/share/fzf/key-bindings.bash ]] && source /run/current-system/sw/share/fzf/key-bindings.bash
 export FZF_DEFAULT_OPTS="--scheme=history"
