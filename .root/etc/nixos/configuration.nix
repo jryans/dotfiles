@@ -126,6 +126,7 @@
     jetbrains-mono
     meld
     patchelf
+    tree
     vim
     vscode
     wirelesstools
