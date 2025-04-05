@@ -126,6 +126,11 @@
     zotero
   ];
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = false;
+  };
+
   programs.firefox.enable = true;
 
   # Disable `lesspipe`, slows down `less` command significantly
