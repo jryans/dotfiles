@@ -128,6 +128,9 @@
 
   programs.firefox.enable = true;
 
+  # Disable `lesspipe`, slows down `less` command significantly
+  programs.less.lessopen = null;
+
   # First version of NixOS installed on this machine
   # Used to maintain compatibility with data created in older versions
   system.stateVersion = "24.11";
