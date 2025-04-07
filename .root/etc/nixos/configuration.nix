@@ -31,6 +31,9 @@
   networking = {
     hostName = "saturn";
     networkmanager.enable = true;
+    hosts = {
+      "10.0.0.14" = [ "umn.local" ];
+    };
   };
   services.avahi = {
     enable = true;
