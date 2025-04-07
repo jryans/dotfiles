@@ -10,6 +10,10 @@
       ./hardware-configuration.nix
     ];
 
+  # First version of NixOS installed on this machine
+  # Used to maintain compatibility with data created in older versions
+  system.stateVersion = "24.11";
+
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
 
   # Use the systemd-boot EFI boot loader
@@ -21,20 +25,22 @@
   boot.initrd.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportAll = false;
   boot.zfs.forceImportRoot = false;
-  # ZFS expects a host ID to link the pool to the machine
-  networking.hostId = "cad537bd";
 
-  # Scrub ZFS pool monthly
-  services.zfs.autoScrub.enable = true;
+  # Localisation
+  time.timeZone = "Europe/London";
+  i18n.defaultLocale = "en_GB.UTF-8";
 
   # Networking
   networking = {
     hostName = "saturn";
+    # ZFS expects a host ID to link the pool to the machine
+    hostId = "cad537bd";
     networkmanager.enable = true;
     hosts = {
       "10.0.0.14" = [ "umn.local" ];
     };
   };
+
   services.avahi = {
     enable = true;
     nssmdns4 = true;
@@ -44,10 +50,6 @@
       addresses = true;
     };
   };
-
-  # Localisation
-  time.timeZone = "Europe/London";
-  i18n.defaultLocale = "en_GB.UTF-8";
 
   services.fwupd.enable = true;
 
@@ -65,6 +67,9 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
+
+  # Scrub ZFS pool monthly
+  services.zfs.autoScrub.enable = true;
 
   users.users.jryans = {
     isNormalUser = true;
@@ -140,9 +145,5 @@
 
   # Disable `lesspipe`, slows down `less` command significantly
   programs.less.lessopen = null;
-
-  # First version of NixOS installed on this machine
-  # Used to maintain compatibility with data created in older versions
-  system.stateVersion = "24.11";
 }
 
