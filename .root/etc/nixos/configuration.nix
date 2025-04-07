@@ -28,8 +28,10 @@
   services.zfs.autoScrub.enable = true;
 
   # Networking
-  networking.hostName = "saturn";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "saturn";
+    networkmanager.enable = true;
+  };
   services.avahi = {
     enable = true;
     nssmdns4 = true;
