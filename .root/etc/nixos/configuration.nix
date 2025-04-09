@@ -130,6 +130,7 @@
     libinput
     jetbrains-mono
     meld
+    nixfmt-rfc-style
     patchelf
     tree
     vim
