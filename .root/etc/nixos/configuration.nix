@@ -68,6 +68,9 @@
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
+    xkb = {
+      layout = "gb,us";
+    };
   };
 
   # Scrub ZFS pool monthly
