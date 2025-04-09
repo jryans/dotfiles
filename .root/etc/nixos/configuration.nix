@@ -2,19 +2,26 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   # First version of NixOS installed on this machine
   # Used to maintain compatibility with data created in older versions
   system.stateVersion = "24.11";
 
-  nix.settings.experimental-features = [ "flakes" "nix-command" ];
+  nix.settings.experimental-features = [
+    "flakes"
+    "nix-command"
+  ];
 
   # Use the systemd-boot EFI boot loader
   boot.loader.systemd-boot.enable = true;
@@ -79,7 +86,10 @@
   users.users.jryans = {
     isNormalUser = true;
     # Enable sudo and network management
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
   };
 
   fonts = {
@@ -116,10 +126,12 @@
     };
   };
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "enpass"
-    "vscode"
-  ];
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "enpass"
+      "vscode"
+    ];
 
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
@@ -152,4 +164,3 @@
   # Disable `lesspipe`, slows down `less` command significantly
   programs.less.lessopen = null;
 }
-
