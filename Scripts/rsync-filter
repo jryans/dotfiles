@@ -22,7 +22,7 @@
 - /Library/Application Support/Microsoft/Teams/
 - /Library/Containers/com.microsoft.teams2/
 
-# Exclude build output directories, like: /Users/*/Projects/mozilla/gecko-dev-2/obj-firefox-*
+# Exclude build output directories
 - /Projects/klee/build*/
 - /Projects/LLVM/**/build*/
 - /Projects/Malleable/Experiments/Polyglot/**/mxbuild/
@@ -45,7 +45,7 @@
 - /Projects/Zig/**/*zig-cache/
 - /Projects/Zig/**/build*/
 
-# Exclude cache directories, like: /Users/*/.cache
+# Exclude cache directories
 - /.anaconda3/
 - /.cache/
 - /.cargo/
@@ -77,10 +77,10 @@
 # Exclude unimportant projects
 - /Projects/electron-project/
 
-# Exclude third-party module directories, like: /Users/*/Projects/*/node_modules/*
+# Exclude third-party module directories
 - /Projects/**/node_modules/
 
-# Exclude editor cache directories, like: /Users/*/Library/Application Support/Code/User/workspaceStorage/*
+# Exclude editor cache directories
 - Code*/*Cache*/
 - Code*/User/workspaceStorage/
 - /.vscode/extensions/*/
