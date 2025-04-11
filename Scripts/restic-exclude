@@ -1,7 +1,11 @@
 # Exclude metadata files
 .DS_Store
 
-# Exclude cache directories
+# Exclude trash
+.local/share/Trash
+
+# Exclude system cache directories
+.cache/
 Library/Caches/
 Library/Logs/
 Library/Saved Application State/
@@ -45,9 +49,8 @@ Projects/Rust/**/target/
 Projects/Zig/**/*zig-cache/
 Projects/Zig/**/build*/
 
-# Exclude cache directories
+# Exclude project cache directories
 .anaconda3/
-.cache/
 .cargo/
 .ccache/
 .cocoapods/
