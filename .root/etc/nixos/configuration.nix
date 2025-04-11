@@ -148,6 +148,7 @@
     meld
     nixfmt-rfc-style
     patchelf
+    restic
     tree
     vim
     vscode
