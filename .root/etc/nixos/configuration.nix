@@ -140,6 +140,8 @@
     file
     fzf # Used in shell init scripts (move to user config?)
     git
+    git-absorb
+    git-revise
     gnome-extension-manager
     gnome-tweaks
     htop
