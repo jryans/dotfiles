@@ -94,6 +94,9 @@ Library/Developer/Xcode/DerivedData/
 Library/Developer/CoreSimulator/
 .android/avd/
 
+# Exclude apps
+Applications/
+
 # Exclude Steam apps
 Library/Application Support/Steam/SteamApps/
 Library/Application Support/Steam/Steam.AppBundle/
