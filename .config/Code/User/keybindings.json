@@ -1,116 +1,234 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
+    "key": "ctrl+k right",
+    "command": "workbench.action.moveEditorToNextGroup",
+    "when": "!isMac"
+  },
+  {
     "key": "cmd+k right",
-    "command": "workbench.action.moveEditorToNextGroup"
+    "command": "workbench.action.moveEditorToNextGroup",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+k left",
+    "command": "workbench.action.moveEditorToPreviousGroup",
+    "when": "!isMac"
   },
   {
     "key": "cmd+k left",
-    "command": "workbench.action.moveEditorToPreviousGroup"
+    "command": "workbench.action.moveEditorToPreviousGroup",
+    "when": "isMac"
   },
+
   {
     "key": "cmd+1",
-    "command": "workbench.action.openEditorAtIndex1"
+    "command": "workbench.action.openEditorAtIndex1",
+    "when": "isMac"
   },
   {
     "key": "cmd+2",
-    "command": "workbench.action.openEditorAtIndex2"
+    "command": "workbench.action.openEditorAtIndex2",
+    "when": "isMac"
   },
   {
     "key": "cmd+3",
-    "command": "workbench.action.openEditorAtIndex3"
+    "command": "workbench.action.openEditorAtIndex3",
+    "when": "isMac"
   },
   {
     "key": "cmd+4",
-    "command": "workbench.action.openEditorAtIndex4"
+    "command": "workbench.action.openEditorAtIndex4",
+    "when": "isMac"
   },
   {
     "key": "cmd+5",
-    "command": "workbench.action.openEditorAtIndex5"
+    "command": "workbench.action.openEditorAtIndex5",
+    "when": "isMac"
   },
   {
     "key": "cmd+6",
-    "command": "workbench.action.openEditorAtIndex6"
+    "command": "workbench.action.openEditorAtIndex6",
+    "when": "isMac"
   },
   {
     "key": "cmd+7",
-    "command": "workbench.action.openEditorAtIndex7"
+    "command": "workbench.action.openEditorAtIndex7",
+    "when": "isMac"
   },
   {
     "key": "cmd+8",
-    "command": "workbench.action.openEditorAtIndex8"
+    "command": "workbench.action.openEditorAtIndex8",
+    "when": "isMac"
   },
   {
     "key": "cmd+9",
-    "command": "workbench.action.openEditorAtIndex9"
+    "command": "workbench.action.openEditorAtIndex9",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.replaceOne",
+    "when": "!isMac && editorFocus && findWidgetVisible"
   },
   {
     "key": "cmd+enter",
     "command": "editor.action.replaceOne",
-    "when": "editorFocus && findWidgetVisible"
+    "when": "isMac && editorFocus && findWidgetVisible"
   },
+
   {
-    "key": "shift+cmd+1",
+    "key": "cmd+shift+1",
     "command": "-editor.action.replaceOne",
     "when": "editorFocus && findWidgetVisible"
   },
   {
-    "key": "cmd+enter",
+    "key": "ctrl+shift+1",
+    "command": "-editor.action.replaceOne",
+    "when": "editorFocus && findWidgetVisible"
+  },
+
+  {
+    "key": "ctrl+enter",
     "command": "search.action.replace",
-    "when": "matchFocus && replaceActive && searchViewletVisible"
+    "when": "!isMac && isEditableItem && matchFocus && replaceActive && searchViewletVisible"
   },
   {
-    "key": "shift+cmd+1",
+    "key": "cmd+enter",
+    "command": "search.action.replace",
+    "when": "isMac && isEditableItem && matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "cmd+shift+1",
     "command": "-search.action.replace",
-    "when": "matchFocus && replaceActive && searchViewletVisible"
+    "when": "isEditableItem && matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "-search.action.replace",
+    "when": "isEditableItem && matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "-search.action.replaceAllInFolder",
+    "when": "folderMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+  },
+
+  {
+    "key": "ctrl+numpad_add",
+    "command": "editor.action.fontZoomIn",
+    "when": "!isMac"
   },
   {
     "key": "cmd+numpad_add",
-    "command": "editor.action.fontZoomIn"
+    "command": "editor.action.fontZoomIn",
+    "when": "isMac"
   },
   {
-    "key": "shift+cmd+=",
-    "command": "editor.action.fontZoomIn"
+    "key": "ctrl+shift+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "!isMac"
+  },
+  {
+    "key": "cmd+shift+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn",
+    "when": "!isMac"
   },
   {
     "key": "cmd+=",
-    "command": "editor.action.fontZoomIn"
+    "command": "editor.action.fontZoomIn",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "editor.action.fontZoomOut",
+    "when": "!isMac"
   },
   {
     "key": "cmd+numpad_subtract",
-    "command": "editor.action.fontZoomOut"
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
   },
   {
-    "key": "shift+cmd+-",
-    "command": "editor.action.fontZoomOut"
+    "key": "ctrl+shift+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "!isMac"
+  },
+  {
+    "key": "cmd+shift+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut",
+    "when": "!isMac"
   },
   {
     "key": "cmd+-",
-    "command": "editor.action.fontZoomOut"
+    "command": "editor.action.fontZoomOut",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+numpad0",
+    "command": "editor.action.fontZoomReset",
+    "when": "!isMac"
   },
   {
     "key": "cmd+numpad0",
-    "command": "editor.action.fontZoomReset"
+    "command": "editor.action.fontZoomReset",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "editor.action.fontZoomReset",
+    "when": "!isMac"
   },
   {
     "key": "cmd+0",
-    "command": "editor.action.fontZoomReset"
+    "command": "editor.action.fontZoomReset",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
   },
   {
     "key": "cmd+q",
     "command": "-workbench.action.quit"
   },
+
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "cmd+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+
   {
     "key": "cmd+m",
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "-workbench.action.closeWindow"
-  },
-  {
-    "key": "cmd+m shift+cmd+b",
+    "key": "cmd+m cmd+shift+b",
     "command": "-latex-workshop.shortcut.mathbb",
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
   },
@@ -145,7 +263,7 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
   },
   {
-    "key": "alt+cmd+c",
+    "key": "cmd+alt+c",
     "command": "-latex-workshop.clean",
     "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
   },
@@ -154,16 +272,37 @@
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   },
+
   {
-    "key": "alt+cmd+g f",
-    "command": "gitlens.openFileOnRemote"
+    "key": "ctrl+shift+g f",
+    "command": "gitlens.openFileOnRemote",
+    "when": "!isMac"
   },
   {
-    "key": "alt+cmd+g m",
-    "command": "gitlens.openCommitOnRemote"
+    "key": "cmd+alt+g f",
+    "command": "gitlens.openFileOnRemote",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+shift+g m",
+    "command": "gitlens.openCommitOnRemote",
+    "when": "!isMac"
   },
   {
-    "key": "alt+cmd+g y",
-    "command": "gitlens.copyRemoteFileUrlToClipboard"
+    "key": "cmd+alt+g m",
+    "command": "gitlens.openCommitOnRemote",
+    "when": "isMac"
+  },
+
+  {
+    "key": "ctrl+shift+g y",
+    "command": "gitlens.copyRemoteFileUrlToClipboard",
+    "when": "!isMac"
+  },
+  {
+    "key": "cmd+alt+g y",
+    "command": "gitlens.copyRemoteFileUrlToClipboard",
+    "when": "isMac"
   }
 ]
