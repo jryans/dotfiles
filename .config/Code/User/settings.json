@@ -265,6 +265,7 @@
   "workbench.list.defaultFindMode": "filter",
   "workbench.editor.empty.hint": "hidden",
   "debug.toolBarLocation": "docked",
+  "chat.commandCenter.enabled": false,
 
   // Uppercase settings match VS Code, lowercase settings match iTerm2
   "workbench.colorCustomizations": {
@@ -567,5 +568,4 @@
   "editor.renderControlCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
-  "chat.commandCenter.enabled": false,
 }
