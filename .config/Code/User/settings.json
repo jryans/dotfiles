@@ -250,6 +250,12 @@
   "graphviz-interactive-preview.view.transitionDuration": 100,
   "graphviz-interactive-preview.renderLockAdditionalTimeout": -1,
 
+  "metals.inlayHints.inferredTypes.enable": true,
+  "metals.inlayHints.typeParameters.enable": true,
+  "metals.inlayHints.implicitConversions.enable": true,
+  "metals.inlayHints.implicitArguments.enable": true,
+  "metals.inlayHints.hintsInPatternMatch.enable": true,
+
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
