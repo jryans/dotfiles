@@ -149,6 +149,7 @@
     libinput
     jetbrains-mono
     meld
+    mesa-demos
     nixfmt-rfc-style
     patchelf
     restic
