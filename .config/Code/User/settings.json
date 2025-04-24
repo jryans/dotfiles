@@ -551,17 +551,17 @@
     "zettelkasten",
     "Zotero"
   ],
-  "cSpell.enableFiletypes": [
-    "beancount",
-    "cmake",
-    "factor",
-    "latex",
-    "makefile",
-    "markdown",
-    "plaintext",
-    "racket",
-    "scheme"
-  ],
+  "cSpell.enabledFileTypes": {
+    "beancount": true,
+    "cmake": true,
+    "factor": true,
+    "latex": true,
+    "makefile": true,
+    "markdown": true,
+    "plaintext": true,
+    "racket": true,
+    "scheme": true,
+  },
 
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "none",
