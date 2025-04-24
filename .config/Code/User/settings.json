@@ -121,6 +121,7 @@
     "trace": "plaintext"
   },
 
+  "update.mode": "manual",
   "update.showReleaseNotes": false,
   "extensions.autoUpdate": false,
   "task.autoDetect": "off",
