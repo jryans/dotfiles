@@ -137,6 +137,7 @@
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     ccache
+    dconf-editor
     enpass
     file
     fzf # Used in shell init scripts (move to user config?)
