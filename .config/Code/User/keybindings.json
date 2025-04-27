@@ -316,4 +316,10 @@
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
   },
+
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.files.saveFiles",
+    "when": "!isMac"
+  },
 ]
