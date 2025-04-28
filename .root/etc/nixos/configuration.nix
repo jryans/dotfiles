@@ -153,6 +153,7 @@
     mesa-demos
     nixfmt-rfc-style
     patchelf
+    psmisc
     restic
     tree
     vim
