@@ -130,12 +130,14 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "bcompare"
       "enpass"
       "vscode"
     ];
 
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
+    bcompare
     ccache
     dconf-editor
     enpass
