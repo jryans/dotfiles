@@ -322,4 +322,10 @@
     "command": "workbench.action.files.saveFiles",
     "when": "!isMac"
   },
+
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+  },
 ]
