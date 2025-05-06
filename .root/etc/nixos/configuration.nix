@@ -172,6 +172,8 @@
 
   programs.firefox.enable = true;
 
+  programs.fw-fanctrl.enable = true;
+
   # Disable `lesspipe`, slows down `less` command significantly
   programs.less.lessopen = null;
 }
