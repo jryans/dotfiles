@@ -2,7 +2,7 @@
 - .DS_Store
 
 # Exclude trash
-- .local/share/Trash
+- /.local/share/Trash/
 
 # Exclude system cache directories
 - /.cache/
@@ -102,7 +102,7 @@
 - /Library/Application Support/Steam/Steam.AppBundle/
 
 # Exclude AutoDesk apps
-- /Library/Application Support/Autodesk/webdeploy
+- /Library/Application Support/Autodesk/webdeploy/
 
 # Exclude rented iTunes media
 - /Music/iTunes/iTunes Music/
