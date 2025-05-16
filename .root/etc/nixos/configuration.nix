@@ -143,6 +143,7 @@
     enpass
     file
     fzf # Used in shell init scripts (move to user config?)
+    ghostscript
     git
     git-absorb
     git-revise
