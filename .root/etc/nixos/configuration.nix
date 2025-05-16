@@ -156,6 +156,7 @@
     mesa-demos
     nixfmt-rfc-style
     patchelf
+    poppler_utils
     psmisc
     restic
     tree
