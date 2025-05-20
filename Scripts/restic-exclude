@@ -59,6 +59,7 @@ Projects/Zig/**/build*/
 .gradle/
 .ivy2/
 .julia/
+.local/share/racket/
 .local/share/Zeal/
 .m2/
 .mozbuild/package-frontend/
