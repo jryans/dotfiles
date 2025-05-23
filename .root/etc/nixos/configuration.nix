@@ -150,6 +150,7 @@
     gnome-extension-manager
     gnome-tweaks
     htop
+    hub
     libinput
     jetbrains-mono
     meld
