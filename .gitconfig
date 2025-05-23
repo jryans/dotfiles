@@ -40,8 +40,6 @@
   whitespace = red reverse
 [rerere]
   enabled = true
-[credential]
-  helper = osxkeychain
 [diff]
   algorithm = patience
   context = 8
