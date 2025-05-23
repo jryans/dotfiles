@@ -70,3 +70,5 @@
   smtpServer = smtp.gmail.com
   smtpEncryption = tls
   smtpServerPort = 587
+[hub]
+  protocol = ssh
