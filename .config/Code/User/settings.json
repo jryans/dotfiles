@@ -267,6 +267,7 @@
   "workbench.editor.empty.hint": "hidden",
   "debug.toolBarLocation": "docked",
   "chat.commandCenter.enabled": false,
+  "window.commandCenter": false,
 
   // Uppercase settings match VS Code, lowercase settings match iTerm2
   "workbench.colorCustomizations": {
