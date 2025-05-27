@@ -43,7 +43,14 @@
     hostName = "saturn";
     # ZFS expects a host ID to link the pool to the machine
     hostId = "cad537bd";
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      dns = "none";
+    };
+    nameservers = [
+      "9.9.9.9"
+      "149.112.112.112"
+    ];
     hosts = {
       "10.0.0.14" = [ "umn.local" ];
     };
