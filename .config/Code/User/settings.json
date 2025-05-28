@@ -430,6 +430,7 @@
     "metaprogramming",
     "minification",
     "miscompilation",
+    "miscompiling",
     "mitigations",
     "mkdir",
     "MLIR",
