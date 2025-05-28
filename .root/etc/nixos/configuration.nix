@@ -164,6 +164,7 @@
     mesa-demos
     nixfmt-rfc-style
     patchelf
+    pipe-rename
     poppler_utils
     psmisc
     restic
