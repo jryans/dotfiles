@@ -165,6 +165,7 @@
     mesa-demos
     nixfmt-rfc-style
     patchelf
+    config.boot.kernelPackages.perf
     pipe-rename
     poppler_utils
     psmisc
