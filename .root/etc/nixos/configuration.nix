@@ -158,6 +158,7 @@
     gnome-tweaks
     htop
     hub
+    hyperfine
     libinput
     jetbrains-mono
     meld
