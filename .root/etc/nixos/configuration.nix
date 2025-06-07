@@ -169,6 +169,7 @@
     pipe-rename
     poppler_utils
     psmisc
+    pkgsLocal.rclone
     restic
     tree
     vim
