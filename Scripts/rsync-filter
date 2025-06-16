@@ -59,6 +59,8 @@
 - /.gradle/
 - /.ivy2/
 - /.julia/
+- /.local/share/gem/
+- /.local/share/metals/
 - /.local/share/racket/
 - /.local/share/Zeal/
 - /.m2/
