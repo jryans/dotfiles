@@ -161,6 +161,7 @@
     hyperfine
     libinput
     jetbrains-mono
+    man-pages
     meld
     mesa-demos
     nixfmt-rfc-style
