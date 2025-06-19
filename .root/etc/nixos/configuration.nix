@@ -172,6 +172,7 @@
     psmisc
     pkgsLocal.rclone
     restic
+    sd
     tree
     vim
     vscode
