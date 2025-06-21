@@ -118,7 +118,8 @@
     "*.lsp": "scheme",
     "*.zuo": "scheme",
     "*.ms": "scheme",
-    "trace": "plaintext"
+    "trace": "plaintext",
+    "*.rbs": "ruby"
   },
 
   "update.mode": "manual",
