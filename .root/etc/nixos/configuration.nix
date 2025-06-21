@@ -165,6 +165,7 @@
     meld
     mesa-demos
     nixfmt-rfc-style
+    ocrmypdf
     patchelf
     config.boot.kernelPackages.perf
     pipe-rename
