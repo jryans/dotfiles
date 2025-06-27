@@ -164,6 +164,7 @@
     man-pages
     meld
     mesa-demos
+    nix-tree
     nixfmt-rfc-style
     ocrmypdf
     patchelf
