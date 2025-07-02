@@ -160,6 +160,7 @@
     htop
     hub
     hyperfine
+    libgtop # Used by GNOME shell extensions (system monitor, session manager)
     libinput
     jetbrains-mono
     man-pages
@@ -183,6 +184,10 @@
     zeal
     zotero
   ];
+
+  environment.variables = {
+    GI_TYPELIB_PATH = "/run/current-system/sw/lib/girepository-1.0";
+  };
 
   programs.direnv = {
     enable = true;
