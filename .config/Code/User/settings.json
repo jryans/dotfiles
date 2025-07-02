@@ -258,6 +258,8 @@
   "metals.inlayHints.implicitArguments.enable": true,
   "metals.inlayHints.hintsInPatternMatch.enable": true,
 
+  "rubyLsp.formatter": "none",
+
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
