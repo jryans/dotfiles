@@ -147,6 +147,7 @@
     bcompare
     ccache
     dconf-editor
+    dmidecode
     enpass
     file
     fzf # Used in shell init scripts (move to user config?)
