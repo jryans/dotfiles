@@ -68,6 +68,8 @@
 
   services.fwupd.enable = true;
 
+  services.gnome.core-developer-tools.enable = true;
+
   services.printing.enable = true;
 
   services.openssh = {
@@ -104,6 +106,8 @@
     packages = with pkgs; [
       noto-fonts
       liberation_ttf
+      source-code-pro
+      source-sans
     ];
     # Map PostScript fonts to Liberation instead of TeX Gyre
     fontconfig = {
@@ -146,7 +150,6 @@
     bc # Used in shell init scripts (move to user config?)
     bcompare
     ccache
-    dconf-editor
     dmidecode
     enpass
     file
@@ -156,6 +159,7 @@
     git-absorb
     git-revise
     gnome-extension-manager
+    gnome-shell-extensions
     gnome-tweaks
     htop
     hub
@@ -197,7 +201,4 @@
   programs.firefox.enable = true;
 
   programs.fw-fanctrl.enable = true;
-
-  # Disable `lesspipe`, slows down `less` command significantly
-  programs.less.lessopen = null;
 }
