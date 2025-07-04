@@ -178,6 +178,7 @@
     poppler_utils
     psmisc
     pkgsLocal.rclone
+    ptyxis
     restic
     sd
     stress
