@@ -168,7 +168,6 @@
     mesa-demos
     nix-tree
     nixfmt-rfc-style
-    ocrmypdf
     patchelf
     config.boot.kernelPackages.perf
     pipe-rename
