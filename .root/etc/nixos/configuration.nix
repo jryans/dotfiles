@@ -177,6 +177,7 @@
     pkgsLocal.rclone
     restic
     sd
+    stress
     tree
     vim
     vscode
