@@ -6,7 +6,7 @@
       url = "github:TamtamHero/fw-fanctrl/packaging/nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgsLocal.url = "/home/jryans/Projects/Nix/nixpkgs";
+    nixpkgsLocal.url = "git+file:///home/jryans/Projects/Nix/nixpkgs";
   };
 
   outputs =

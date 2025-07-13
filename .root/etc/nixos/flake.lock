@@ -72,14 +72,17 @@
     },
     "nixpkgsLocal": {
       "locked": {
-        "lastModified": 1749334733,
-        "narHash": "sha256-ZPaGLhZ2mUf3nKxhAe+nHJqSowotCl7GxJmZFzG2ZDE=",
-        "path": "/home/jryans/Projects/Nix/nixpkgs",
-        "type": "path"
+        "lastModified": 1749334382,
+        "narHash": "sha256-HnbGtW9xw61FYKXQKme0Zko7KLunOYbXj9u9HxG5Yuw=",
+        "ref": "refs/heads/master",
+        "rev": "a65cc51f49de5046552cc32e511d48c137d6fb97",
+        "revCount": 812069,
+        "type": "git",
+        "url": "file:///home/jryans/Projects/Nix/nixpkgs"
       },
       "original": {
-        "path": "/home/jryans/Projects/Nix/nixpkgs",
-        "type": "path"
+        "type": "git",
+        "url": "file:///home/jryans/Projects/Nix/nixpkgs"
       }
     },
     "root": {
