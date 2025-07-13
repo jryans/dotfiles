@@ -102,6 +102,7 @@ Library/Developer/CoreSimulator/
 Applications/
 
 # Exclude Steam apps
+.local/share/Steam/
 Library/Application Support/Steam/SteamApps/
 Library/Application Support/Steam/Steam.AppBundle/
 

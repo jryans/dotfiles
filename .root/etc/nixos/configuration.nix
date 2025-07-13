@@ -143,6 +143,8 @@
     builtins.elem (lib.getName pkg) [
       "bcompare"
       "enpass"
+      "steam"
+      "steam-unwrapped"
       "vscode"
     ];
 
@@ -203,4 +205,6 @@
   programs.firefox.enable = true;
 
   programs.fw-fanctrl.enable = true;
+
+  programs.steam.enable = true;
 }
