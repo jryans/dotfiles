@@ -179,6 +179,7 @@
     psmisc
     pkgsLocal.rclone
     ptyxis
+    qpdf
     restic
     sd
     stress
