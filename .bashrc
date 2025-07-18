@@ -94,7 +94,11 @@ else
 fi
 alias dek='sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext /System/Library/Extensions/AppleUSBMultitouch.kext'
 alias eek='sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext /System/Library/Extensions/AppleUSBMultitouch.kext'
-alias lsp='lsof -i -n -P -sTCP:LISTEN'
+if [[ "$OS" == 'mac' ]]; then
+  alias lsp='lsof -i -n -P -sTCP:LISTEN'
+else
+  alias lsp='netstat -ltnp'
+fi
 alias gash='/Applications/git-annex.app/Contents/MacOS/runshell'
 alias mqgit='idx=0; while read patch; do idx=$((idx + 1)); printf -v pad "%03g" $idx; $(hg-patch-to-git-patch $patch > "$pad-$patch-git"); done < series'
 alias gencert="openssl req -x509 -sha256 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -days 365 -nodes -subj '/CN=localhost'"
