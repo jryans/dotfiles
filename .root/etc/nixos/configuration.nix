@@ -145,6 +145,7 @@
       "enpass"
       "steam"
       "steam-unwrapped"
+      "unrar"
       "vscode"
     ];
 
@@ -186,6 +187,7 @@
     sd
     stress
     tree
+    unrar
     vim
     vscode
     wirelesstools
