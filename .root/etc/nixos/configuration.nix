@@ -54,6 +54,10 @@
     hosts = {
       "10.0.0.14" = [ "umn.local" ];
     };
+    firewall = {
+      # Disable reverse path filter, interferes with VPN
+      checkReversePath = false;
+    };
   };
 
   services.avahi = {
@@ -179,6 +183,7 @@
     config.boot.kernelPackages.perf
     pipe-rename
     poppler_utils
+    protonvpn-gui
     psmisc
     pkgsLocal.rclone
     ptyxis
