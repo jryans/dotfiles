@@ -138,6 +138,7 @@
   "git.terminalAuthentication": false,
   "github.gitAuthentication": false,
 
+  "gitlens.ai.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.scopes": [
     "document"
