@@ -189,6 +189,7 @@
     ptyxis
     qpdf
     restic
+    samply
     sd
     stress
     tree
