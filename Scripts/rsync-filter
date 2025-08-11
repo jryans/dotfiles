@@ -27,6 +27,7 @@
 - /Library/Containers/com.microsoft.teams2/
 
 # Exclude build output directories
+- /Projects/GNU/gcc/build*/
 - /Projects/Haskell/GHC/ghc/_*/
 - /Projects/klee/build*/
 - /Projects/LLVM/**/build*/
