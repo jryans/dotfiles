@@ -51,6 +51,9 @@
 - /Projects/Zig/**/*zig-cache/
 - /Projects/Zig/**/build*/
 
+# Exclude huge research data directories
+- /Research/Papers/debug-info-consistency-concrete/data/**/concrete-trace/
+
 # Exclude project cache directories
 - /.anaconda3/
 - /.cargo/
