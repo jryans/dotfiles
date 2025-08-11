@@ -54,7 +54,8 @@ if [[ "$OS" == 'mac' ]]; then
 else
   CORES="$(nproc)"
 fi
-export MAKEFLAGS="-j $(echo "${CORES} - 4" | bc)"
+JOBS="$(echo "${CORES} - 4" | bc)"
+export MAKEFLAGS="-j ${JOBS}"
 
 # Less
 # Allow color escape sequences by default
