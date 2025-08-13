@@ -197,6 +197,7 @@
     vim
     vscode
     wirelesstools
+    wl-clipboard
     zeal
     zotero
   ];
