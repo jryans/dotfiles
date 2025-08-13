@@ -189,6 +189,7 @@
     ptyxis
     qpdf
     restic
+    ripgrep
     samply
     sd
     stress
