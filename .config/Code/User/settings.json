@@ -224,6 +224,7 @@
   "rust-analyzer.lens.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+  "rust-analyzer.imports.granularity.group": "module",
 
   "zig.checkForUpdate": false,
   "zig.initialSetupDone": true,
