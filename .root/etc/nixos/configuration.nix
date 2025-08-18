@@ -168,6 +168,7 @@
     gnome-extension-manager
     gnome-shell-extensions
     gnome-tweaks
+    gnumeric
     htop
     hub
     hyperfine
