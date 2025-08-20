@@ -30,6 +30,7 @@
 - /Projects/GNU/gcc/build*/
 - /Projects/Haskell/GHC/ghc/_*/
 - /Projects/klee/build*/
+- /Projects/Lean/lean4/build*/
 - /Projects/LLVM/**/build*/
 - /Projects/Malleable/Experiments/Polyglot/**/mxbuild/
 - /Projects/Malleable/Experiments/Polyglot/**/build/
