@@ -59,6 +59,7 @@ Research/Papers/debug-info-consistency-concrete/data/**/concrete-trace/
 .cargo/
 .ccache/
 .cocoapods/
+.elan/toolchains/
 .g8/
 .gem/
 .gradle/

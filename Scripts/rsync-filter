@@ -59,6 +59,7 @@
 - /.cargo/
 - /.ccache/
 - /.cocoapods/
+- /.elan/toolchains/
 - /.g8/
 - /.gem/
 - /.gradle/
