@@ -28,7 +28,11 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              cmake
               elan
+              gmp
+              libuv
+              pkg-config
             ];
             hardeningDisable = [ "fortify" ];
           };
