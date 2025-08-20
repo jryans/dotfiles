@@ -262,6 +262,9 @@
 
   "rubyLsp.formatter": "none",
 
+  "lean4.alwaysAskBeforeInstallingLeanVersions": true,
+  "lean4.alwaysShowTitleBarMenu": false,
+
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
