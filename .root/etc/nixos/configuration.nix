@@ -178,6 +178,7 @@
     man-pages
     meld
     mesa-demos
+    nix-index
     nix-tree
     nixfmt-rfc-style
     patchelf
