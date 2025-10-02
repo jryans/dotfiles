@@ -54,6 +54,7 @@
 
 # Exclude huge research data directories
 - /Research/Papers/debug-info-consistency-concrete/data/**/concrete-trace/
+- /Research/Papers/debug-info-consistency-concrete/data/**/divergences/**/events/
 
 # Exclude project cache directories
 - /.anaconda3/
