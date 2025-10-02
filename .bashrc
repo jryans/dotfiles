@@ -58,8 +58,9 @@ JOBS="$(echo "${CORES} - 4" | bc)"
 export MAKEFLAGS="-j ${JOBS}"
 
 # Less
-# Allow color escape sequences by default
-export LESS="-R"
+# Allow color escape sequences
+# Disable line numbers
+export LESS="-R -n"
 
 # Shell integrations
 [ ! -z "$BREW" ] && [[ -s /usr/local/etc/bash_completion ]] && source /usr/local/etc/bash_completion
