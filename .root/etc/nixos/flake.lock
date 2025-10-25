@@ -72,11 +72,11 @@
     },
     "nixpkgsLocal": {
       "locked": {
-        "lastModified": 1749334382,
-        "narHash": "sha256-HnbGtW9xw61FYKXQKme0Zko7KLunOYbXj9u9HxG5Yuw=",
+        "lastModified": 1761422709,
+        "narHash": "sha256-2FaBPSg/yvqRE6Kd84aqcT4Ek3NS9ZHZB/gbXWUpjAg=",
         "ref": "refs/heads/master",
-        "rev": "a65cc51f49de5046552cc32e511d48c137d6fb97",
-        "revCount": 812069,
+        "rev": "10de0d7015ca8c36fa3522562d14f0b990e3d0d4",
+        "revCount": 884426,
         "type": "git",
         "url": "file:///home/jryans/Projects/Nix/nixpkgs"
       },

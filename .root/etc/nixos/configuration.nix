@@ -157,6 +157,7 @@
     bc # Used in shell init scripts (move to user config?)
     bcompare
     ccache
+    pkgsLocal.decker
     dmidecode
     enpass
     file
