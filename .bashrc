@@ -29,7 +29,7 @@ export EDITOR="vim"
 
 # Paths
 export PROJPATH="${HOME}/Projects"
-export PATH="${HOME}/bin:${HOME}/.local/bin:${PROJPATH}/Racket/racket/racket/src/build/bin:${HOME}/.cargo/bin:${HOME}/Library/Python/3.12/bin:${HOME}/Library/Application Support/Coursier/bin:${PROJPATH}/FlameGraph:${PROJPATH}/llvm-project/llvm/utils/git-svn:${PROJPATH}/llvm-project/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/platform-tools:${PROJPATH}/depot_tools:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="${HOME}/bin:${HOME}/.local/bin:${PROJPATH}/Racket/racket/racket/src/build/bin:${HOME}/.cargo/bin:${HOME}/Library/Python/3.12/bin:${HOME}/Library/Application Support/Coursier/bin:${PROJPATH}/FlameGraph:${PROJPATH}/LLVM/llvm/clang/tools/clang-format:${PROJPATH}/git-cinnabar:${PROJPATH}/hgexts/version-control-tools/git/commands:${PROJPATH}/mozilla/moz-git-tools:${PROJPATH}/arcanist/bin:${PROJPATH}/android-sdk/platform-tools:/usr/local/sbin:/usr/local/bin:$PATH"
 [ ! -z "$BREW" ] && export PATH="$PATH:/usr/local/opt/go/bin:/usr/local/opt/php@7.4/bin:/usr/local/opt/vim/bin"
 
 # History
