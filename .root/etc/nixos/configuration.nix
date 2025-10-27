@@ -224,4 +224,6 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
+
+  programs.thunderbird.enable = true;
 }
