@@ -156,6 +156,7 @@
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     bcompare
+    bloaty
     ccache
     pkgsLocal.decker
     dmidecode
