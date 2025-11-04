@@ -94,6 +94,7 @@
 
 # Exclude third-party module directories
 - /Projects/**/node_modules/
+- /Projects/**/venv/
 
 # Exclude editor cache directories
 - Code*/*Cache*/
