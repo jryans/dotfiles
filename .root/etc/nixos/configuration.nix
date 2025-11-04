@@ -187,7 +187,6 @@
     config.boot.kernelPackages.perf
     pipe-rename
     poppler_utils
-    protonmail-bridge
     protonvpn-gui
     psmisc
     pkgsLocal.rclone
