@@ -111,7 +111,7 @@ Library/Developer/CoreSimulator/
 .android/avd/
 
 # Exclude apps
-Applications/
+${HOME}/Applications/
 
 # Exclude Steam apps
 .local/share/Steam/
