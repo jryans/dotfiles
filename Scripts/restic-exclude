@@ -52,6 +52,9 @@ Projects/Rust/**/target/
 Projects/Zig/**/*zig-cache/
 Projects/Zig/**/build*/
 
+# Exclude test data directories
+Projects/ffmpeg/tests/fate/samples
+
 # Exclude huge research data directories
 Research/Papers/debug-info-consistency-concrete/data/**/concrete-trace/
 Research/Papers/debug-info-consistency-concrete/data/**/divergences/**/events/
