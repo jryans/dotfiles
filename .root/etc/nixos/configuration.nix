@@ -174,6 +174,7 @@
     htop
     hub
     hyperfine
+    inkscape
     libgtop # Used by GNOME shell extensions (system monitor, session manager)
     libinput
     jetbrains-mono
