@@ -26,6 +26,8 @@
   "editor.suggest.insertMode": "replace",
   "notebook.stickyScroll.enabled": true,
 
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.hideUnchangedRegions.contextLineCount": 8,
   "diffEditor.maxComputationTime": 10000,
 
   "editor.rulers": [ 80, 90 ],
