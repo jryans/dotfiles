@@ -146,6 +146,7 @@
     pkg:
     builtins.elem (lib.getName pkg) [
       "bcompare"
+      "binaryninja-free"
       "enpass"
       "steam"
       "steam-unwrapped"
@@ -156,6 +157,7 @@
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     bcompare
+    binaryninja-free
     binutils
     bloaty
     ccache
