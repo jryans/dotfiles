@@ -124,5 +124,6 @@ Library/Application Support/Autodesk/webdeploy/
 # Exclude rented iTunes media
 Music/iTunes/iTunes Music/
 
-# Exclude Docker VM
+# Exclude Docker data
+.local/share/docker/
 Library/Containers/com.docker.docker/
