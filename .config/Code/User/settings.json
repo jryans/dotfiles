@@ -576,6 +576,9 @@
     "zettelkasten",
     "Zotero"
   ],
+  "cSpell.flagWords": [
+    "hte: the",
+  ],
   "cSpell.enabledFileTypes": {
     "beancount": true,
     "cmake": true,
