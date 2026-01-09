@@ -169,6 +169,7 @@
     ghostscript
     git
     git-absorb
+    git-filter-repo
     git-revise
     gnome-extension-manager
     gnome-shell-extensions
