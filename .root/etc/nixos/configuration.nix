@@ -97,6 +97,11 @@
   # Scrub ZFS pool monthly
   services.zfs.autoScrub.enable = true;
 
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
   users.users.jryans = {
     isNormalUser = true;
     # Enable sudo and network management
