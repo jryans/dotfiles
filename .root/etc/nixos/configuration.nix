@@ -74,6 +74,16 @@
 
   services.gnome.core-developer-tools.enable = true;
 
+  services.guix = {
+    enable = true;
+    # `bordeaux` seems much faster than the others
+    substituters.urls = [
+      "https://bordeaux.guix.gnu.org"
+      "https://ci.guix.gnu.org"
+      "https://berlin.guix.gnu.org"
+    ];
+  };
+
   services.printing.enable = true;
 
   services.openssh = {
