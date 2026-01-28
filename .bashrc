@@ -186,7 +186,7 @@ alias zr='./staging/Zotero.app/Contents/MacOS/zotero -P development -datadir pro
 alias zbr='/Applications/Zotero\ Beta.app/Contents/MacOS/zotero -P development -datadir profile -ZoteroDebug -foreground'
 
 # Go
-export GOPATH=${PROJPATH}/go
+export GOPATH=${HOME}/.go
 export PATH="${PATH}:${GOPATH}/bin"
 
 # Rust
