@@ -177,6 +177,7 @@
     bloaty
     ccache
     pkgsLocal.decker
+    ddd
     dmidecode
     enpass
     file
