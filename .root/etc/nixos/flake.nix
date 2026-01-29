@@ -24,6 +24,11 @@
         specialArgs = {
           pkgsLocal = import nixpkgsLocal {
             inherit system;
+            config.allowUnfreePredicate =
+              pkg:
+              builtins.elem (nixpkgs.lib.getName pkg) [
+                "binaryninja-free"
+              ];
           };
         };
         modules = [
