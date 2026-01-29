@@ -67,6 +67,7 @@ Research/Papers/debug-info-consistency-concrete/data/**/divergences/**/events/
 .elan/toolchains/
 .g8/
 .gem/
+.go/
 .gradle/
 .ivy2/
 .julia/
