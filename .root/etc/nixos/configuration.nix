@@ -205,6 +205,7 @@
     nix-tree
     nixfmt-rfc-style
     patchelf
+    pciutils
     config.boot.kernelPackages.perf
     pipe-rename
     poppler_utils
