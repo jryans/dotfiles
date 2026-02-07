@@ -470,6 +470,7 @@
     "PACMPL",
     "passphrase",
     "passphrases",
+    "patchelf",
     "pdftex",
     "peekable",
     "permalinking",
@@ -573,6 +574,7 @@
     "worklist",
     "XPCOM",
     "Yoric",
+    "Zenodo",
     "zettelkasten",
     "Zotero"
   ],
