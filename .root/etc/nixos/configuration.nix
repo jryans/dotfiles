@@ -218,6 +218,7 @@
     ripgrep
     samply
     sd
+    smartmontools
     stress
     tree
     unrar
