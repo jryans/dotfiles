@@ -227,6 +227,7 @@
     wirelesstools
     wl-clipboard
     zeal
+    zip
     zotero
   ];
 
