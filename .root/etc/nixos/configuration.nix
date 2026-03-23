@@ -196,6 +196,7 @@
     gnome-shell-extensions
     gnome-tweaks
     gnumeric
+    hashcat
     htop
     hub
     hyperfine
