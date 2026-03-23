@@ -169,6 +169,10 @@
       "vscode"
     ];
 
+  hardware.graphics.extraPackages = with pkgs; [
+    rocmPackages.clr.icd
+  ];
+
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     bcompare
@@ -176,6 +180,7 @@
     binutils
     bloaty
     ccache
+    clinfo
     pkgsLocal.decker
     ddd
     dmidecode
