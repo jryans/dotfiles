@@ -23,7 +23,7 @@
   l1 = log --oneline
   rc = rebase --continue
   au = add -u
-  qr = qrebase
+  qr = "!f(){ git rebase -i $(git merge-base $(git describe --contains --all HEAD) $(git rev-parse --abbrev-ref --symbolic-full-name @{u})); }; f"
   msg = log -n 1 --pretty=format:%B
   nb = "!f(){ git checkout -b $1 $(git symbolic-ref --short refs/remotes/origin/HEAD); }; f"
   ch = checkout
