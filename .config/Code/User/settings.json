@@ -272,6 +272,12 @@
   "lean4.alwaysAskBeforeInstallingLeanVersions": true,
   "lean4.alwaysShowTitleBarMenu": false,
 
+  "julia.symbolCacheDownload": true,
+  "julia.enableTelemetry": true,
+  "julia.executablePath": "/nix/store/nncvrlwirwgijdarpdrf236mg9mc602c-julia-1.11.5/bin/julia",
+  "julia.juliaup.install.hint": false,
+  "julia.useRevise": false,
+
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
