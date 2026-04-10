@@ -25,6 +25,11 @@
   "editor.stickyScroll.enabled": true,
   "editor.suggest.insertMode": "replace",
   "notebook.stickyScroll.enabled": true,
+  "notebook.editorOptionsCustomizations": {
+    "editor.tabSize": 2,
+    "editor.indentSize": 2,
+    "editor.insertSpaces": true,
+  },
 
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.hideUnchangedRegions.contextLineCount": 8,
