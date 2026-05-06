@@ -236,7 +236,7 @@
     wl-clipboard
     zeal
     zip
-    zotero
+    pkgsLocal.zotero
   ];
 
   environment.variables = {
