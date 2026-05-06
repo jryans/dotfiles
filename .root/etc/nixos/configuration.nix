@@ -70,6 +70,9 @@
     };
   };
 
+  services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+
   services.fwupd.enable = true;
 
   services.gnome.core-developer-tools.enable = true;
@@ -97,8 +100,6 @@
 
   services.xserver = {
     enable = true;
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
     xkb = {
       layout = "gb,us";
     };
@@ -169,6 +170,8 @@
       "vscode"
     ];
 
+  hardware.fw-fanctrl.enable = true;
+
   hardware.graphics.extraPackages = with pkgs; [
     rocmPackages.clr.icd
   ];
@@ -176,12 +179,11 @@
   environment.systemPackages = with pkgs; [
     bc # Used in shell init scripts (move to user config?)
     bcompare
-    pkgsLocal.binaryninja-free
     binutils
     bloaty
     ccache
     clinfo
-    pkgsLocal.decker
+    decker
     ddd
     dmidecode
     enpass
@@ -209,15 +211,15 @@
     mesa-demos
     nix-index
     nix-tree
-    nixfmt-rfc-style
+    nixfmt
     patchelf
     pciutils
-    config.boot.kernelPackages.perf
+    perf
     pipe-rename
-    poppler_utils
+    poppler-utils
     protonvpn-gui
     psmisc
-    pkgsLocal.rclone
+    rclone
     ptyxis
     qpdf
     restic
@@ -247,8 +249,6 @@
   };
 
   programs.firefox.enable = true;
-
-  programs.fw-fanctrl.enable = true;
 
   programs.steam = {
     enable = true;

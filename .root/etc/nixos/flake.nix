@@ -1,11 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     nixosHardware.url = "github:NixOS/nixos-hardware/master";
-    fwFanCtrl = {
-      url = "github:TamtamHero/fw-fanctrl/packaging/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nixpkgsLocal.url = "git+file:///home/jryans/Projects/Nix/nixpkgs";
   };
 
@@ -14,7 +10,6 @@
       self,
       nixpkgs,
       nixosHardware,
-      fwFanCtrl,
       nixpkgsLocal,
       ...
     }:
@@ -33,7 +28,6 @@
         };
         modules = [
           nixosHardware.nixosModules.framework-13-7040-amd
-          fwFanCtrl.nixosModules.default
           ./configuration.nix
         ];
       };
