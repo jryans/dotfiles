@@ -186,6 +186,7 @@
       "remote": true
     }
   },
+  "gitlens.rebaseEditor.openOnPausedRebase": false,
 
   "vim.normalModeKeyBindings": [
     {
