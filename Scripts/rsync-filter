@@ -20,6 +20,7 @@
 - /Library/Application Support/Google/Chrome**/*Cache/
 
 # Exclude Firefox transient data
+- /.mozilla/firefox/*/storage/**/cache/
 - /Library/Application Support/Firefox/Profiles/**/cache2/
 
 # Exclude Electron app transient data
