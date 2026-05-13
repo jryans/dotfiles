@@ -58,6 +58,7 @@ Projects/ffmpeg/tests/fate/samples
 # Exclude huge research data directories
 Research/Papers/debug-info-consistency-concrete/data/**/concrete-trace/
 Research/Papers/debug-info-consistency-concrete/data/**/divergences/**/events/
+Research/Reports/phd-thesis/data/
 
 # Exclude project cache directories
 .anaconda3/
