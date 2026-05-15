@@ -87,6 +87,13 @@
     ];
   };
 
+  services.logind.settings.Login = {
+    HandleHibernateKey = "ignore";
+    HandleHibernateKeyLongPress = "ignore";
+    HandleSuspendKey = "ignore";
+    HandleSuspendKeyLongPress = "ignore";
+  };
+
   services.printing.enable = true;
 
   services.openssh = {
