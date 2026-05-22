@@ -219,6 +219,7 @@
     nix-index
     nix-tree
     nixfmt
+    nvme-cli
     patchelf
     pciutils
     perf
