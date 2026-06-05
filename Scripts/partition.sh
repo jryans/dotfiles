@@ -24,11 +24,22 @@ parted /dev/nvme0n1 -- mkpart swap linux-swap -4GiB 100%
 # Check sector size for correct `ashift` value
 # https://wiki.archlinux.org/title/ZFS#Advanced_Format_disks
 blockdev --getpbsz /dev/nvme0n1
+# Or alternatively...
+nvme list
 
 # Create ZFS pool on root partition
 # https://nixos.wiki/wiki/ZFS
 # https://openzfs.github.io/openzfs-docs/man/v2.3/7/zfsprops.7.html
-# Add `-o ashift=12` or similar based on results above
+# Consider adding `-o ashift=X` or similar based on results above
+# Various threads suggest `ashift=12` because
+# 1. devices sometimes lie about physical size, and
+# 2. a new drive might require a larger `ashift``.
+# ZFS developers suggest newer devices report accurate values.
+# As a counterpoint, smaller `ashift` values may improve compressibility,
+# as more granular storage allows more chances for space savings (by using
+# fewer blocks after compression).
+# In the end, we went with `ashift=9`, as that matched the drive used.
+
 zpool create \
   -O compression=zstd \
   -O encryption=on \
