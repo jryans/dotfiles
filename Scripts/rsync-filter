@@ -30,6 +30,8 @@
 # Exclude build output directories
 - /Projects/GNU/gcc/build*/
 - /Projects/Haskell/GHC/ghc/_*/
+- /Projects/Julia/**/build*/
+- /Projects/Julia/**/deps/
 - /Projects/klee/build*/
 - /Projects/Lean/lean4/build*/
 - /Projects/LLVM/**/build*/
