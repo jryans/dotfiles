@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     systems.url = "github:nix-systems/default";
   };
 
@@ -28,8 +28,18 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              cmake
+              gfortran
               julia
+              ninja
+              pkg-config
+              python3.pkgs.python
+              python3.pkgs.venvShellHook
+              texlive.combined.scheme-full
             ];
+            hardeningDisable = [ "fortify" ];
+            venvDir = "./builds/venv";
+            NIX_ENFORCE_NO_NATIVE = false;
           };
         }
       );
