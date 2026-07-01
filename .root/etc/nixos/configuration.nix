@@ -238,6 +238,7 @@
     stress
     tree
     unrar
+    usbutils
     vim
     vscode
     wirelesstools
