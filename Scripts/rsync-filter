@@ -28,6 +28,8 @@
 - /Library/Containers/com.microsoft.teams2/
 
 # Exclude build output directories
+- /Projects/Elixir/**/_build/
+- /Projects/Elixir/**/ebin/
 - /Projects/GNU/gcc/build*/
 - /Projects/Haskell/GHC/ghc/_*/
 - /Projects/Julia/**/build*/
