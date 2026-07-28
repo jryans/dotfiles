@@ -257,7 +257,10 @@
     enableBashIntegration = false;
   };
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    package = pkgsLocal.firefox;
+  };
 
   programs.steam = {
     enable = true;
