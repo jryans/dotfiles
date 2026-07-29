@@ -1,12 +1,3 @@
-# Compiler Flags
-# if test "${MOZ_ARTIFACT}" != "1"; then
-  # JRS: These seem to be the defaults now
-  # export CC="clang"
-  # export CXX="clang++"
-  # export CFLAGS="-fcolor-diagnostics"
-  # export CXXFLAGS="-fcolor-diagnostics"
-# fi
-
 # objdir
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug
 
