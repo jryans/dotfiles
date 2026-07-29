@@ -217,7 +217,6 @@
   "C_Cpp.workspaceParsingPriority": "low",
   "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
 
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
 
   "jupyter.askForKernelRestart": false,
