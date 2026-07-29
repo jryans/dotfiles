@@ -82,7 +82,7 @@ Research/Reports/phd-thesis/data/
 .local/share/racket/
 .local/share/Zeal/
 .m2/
-.mozbuild/package-frontend/
+.mozbuild/
 .mozilla/mozregression/persist/
 .mx/
 .npm/
