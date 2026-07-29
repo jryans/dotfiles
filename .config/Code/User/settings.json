@@ -234,7 +234,6 @@
   "rust-analyzer.imports.granularity.group": "module",
 
   "zig.checkForUpdate": false,
-  "zig.initialSetupDone": true,
   "zig.path": "zig",
   "zig.zls.path": "/Users/jryans/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   "zig.formattingProvider": "zls",
