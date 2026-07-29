@@ -39,8 +39,8 @@
 - /Projects/LLVM/**/build*/
 - /Projects/Malleable/Experiments/Polyglot/**/mxbuild/
 - /Projects/Malleable/Experiments/Polyglot/**/build/
-- /Projects/Mozilla/gecko*/obj-*/
-- /Projects/Mozilla/gecko*/target/
+- /Projects/Mozilla/**/obj-*/
+- /Projects/Mozilla/**/target/
 - /Projects/Racket/**/bin/
 - /Projects/Racket/**/boot/
 - /Projects/Racket/**/build/
