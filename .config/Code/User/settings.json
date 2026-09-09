@@ -95,7 +95,6 @@
     "**/.DS_Store": true,
     "**/._*": true,
     "**/Thumbs.db": true,
-    "**/obj-*": true,
     "**/*.cmd": true,
   },
 
@@ -107,12 +106,13 @@
     "**/obj-*/**": true,
     "**/.bloop": true,
     "**/.metals": true,
-    "**/.ammonite": true
+    "**/.ammonite": true,
   },
 
   "search.exclude": {
     "**/.direnv/**": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/obj-*": true,
   },
 
   "files.associations": {
