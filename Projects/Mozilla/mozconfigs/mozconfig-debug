@@ -2,10 +2,17 @@
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-firefox-debug
 
 # Make Options
-mk_add_options AUTOCONF=autoconf213
+# mk_add_options AUTOCONF=autoconf213
 
 # Application
 ac_add_options --enable-application=browser
+
+# NixOS
+# Precompiled tools won't work on NixOS
+ac_add_options --disable-bootstrap
+ac_add_options --with-libclang-path=/nix/store/bljp5s9sb7kz2yfz4g1mix0g7n00lpdv-clang-21.1.7-lib/lib
+ac_add_options --without-wasm-sandboxed-libraries
+export AS="/nix/store/3g9wh4yb0k74sz2rclz6vvf9m7l3f8ii-clang-wrapper-21.1.7/bin/clang"
 
 # Features
 ac_add_options --disable-crashreporter
