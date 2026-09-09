@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     systems.url = "github:nix-systems/default";
   };
 
@@ -15,22 +15,31 @@
         f:
         nixpkgs.lib.genAttrs (import systems) (
           system:
-          f {
+          f rec {
             pkgs = import nixpkgs {
               inherit system;
             };
+            llvm = pkgs.llvmPackages;
           }
         );
     in
     {
       devShells = forEachSystem (
-        { pkgs }:
+        { pkgs, llvm }:
         {
-          default = pkgs.mkShell {
-            packages = with pkgs; [
-            ];
-            hardeningDisable = [ "fortify" ];
-          };
+          default =
+            pkgs.mkShell.override
+              {
+                stdenv = pkgs.overrideCC pkgs.stdenv llvm.clangUseLLVM;
+              }
+              {
+                packages = with pkgs; [
+                  llvm.bintools
+                  gdb
+                  llvm.lldb
+                ];
+                hardeningDisable = [ "fortify" ];
+              };
         }
       );
     };
