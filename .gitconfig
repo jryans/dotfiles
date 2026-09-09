@@ -54,9 +54,6 @@
   directoryRenames = true
 [commit]
   cleanup = strip
-[cinnabar]
-	helper = /Users/jryans/Projects/git-cinnabar/git-cinnabar-helper
-	version-check = 1664739774
 [pull]
   rebase = true
 [init]
