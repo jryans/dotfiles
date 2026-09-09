@@ -241,6 +241,7 @@
     usbutils
     vim
     vscode
+    vulkan-tools
     wirelesstools
     wl-clipboard
     zeal
